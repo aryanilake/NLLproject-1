@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding:30px;
+  background-color: white;
+}
+header #headerlogo #mainLogo {
+  height: 160px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+header #headerNavigation #Title h2{
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+  margin-left: 55px;
+
+}
+header #headerNavigation {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+header #headerNavigation #Navigation nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+header #headerNavigation #Navigation nav a{ 
+    display: flex;
+    flex-direction: row;
+    margin-right:20px;
+    width:150px;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    /* border-right: 1.5px solid gray; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header #headerNavigation #Navigation nav #navLinks{
+    border-right: 1.5px solid gray;
+    color:black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+} 
+#login{
+    border:none;
+    border-right:none;
+    border-color: orange;
+    outline: none;
+    background-color: orange;
+    border-radius: 10px;
+    padding:10px;
+    color: white;
+    font-weight:300;
+    font-style: bold;
+} 
