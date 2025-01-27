@@ -35,47 +35,47 @@ header #headerNavigation #Navigation nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   margin-right: 10px;
-  margin-left: 10px;  transition: 1s;
-
+  margin-left: 10px;
+  transition: 1s;
 }
-header #headerNavigation #Navigation nav #linkList{
-  display:flex;
+header #headerNavigation #Navigation nav #linkList {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  text-align: center;  transition: 1s;
-
-} 
-header #headerNavigation #Navigation nav #linkList li,header #headerNavigation #Navigation nav #linkList li a{
-  text-align:center;
+  text-align: center;
+  transition: 1s;
+}
+header #headerNavigation #Navigation nav #linkList li,
+header #headerNavigation #Navigation nav #linkList li a {
+  text-align: center;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   transition: 1s;
   list-style: none;
 }
-#dropDown{
-  position:absolute;
+#dropDown {
+  position: absolute;
   transition: 1s;
-  display:none
-} 
-header #headerNavigation #Navigation nav #linkList #dropDown li a{
-  text-align:left;
+  display: none;
+}
+header #headerNavigation #Navigation nav #linkList #dropDown li a {
+  text-align: left;
   align-items: left;
-  justify-content:left;
+  justify-content: left;
   margin-left: -21.5px;
   transition: 1s;
   background-color: white;
-  padding:4px;
-  margin-top:3px;
-  color:gray;
-  border-left:3px solid black;
-  
+  padding: 4px;
+  margin-top: 3px;
+  color: gray;
+  border-left: 3px solid black;
 }
 a:hover ~ #dropDown {
   transition: 1s;
-  display:block
+  display: block;
 }
 header #headerNavigation #Navigation nav a {
   display: flex;
@@ -115,32 +115,134 @@ header #headerNavigation #Navigation nav #navLinks {
 #padding {
   padding: 1vh;
 }
-header #headerNavigation #Navigation nav .dropDown  {
+header #headerNavigation #Navigation nav .dropDown {
   position: relative;
-  text-align:left;
-  align-items:left;
-  justify-content:left;
-  margin-right:auto;
-  left:0;
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+  margin-right: auto;
+  left: 0;
 }
 
+.downbox {
+  float: bottom;
+  background: rgb(241, 243, 245);
+  border-radius: 15px;
+  width: 1000x;
+  min-height: 490px;
 
-.downbox
-{
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Kanit", serif;
+}
+
+.downbox .left {
+  color: grey;
+  width: 40%;
+  height: 200px;
+  margin-top: 60px;
+  grid-template-columns: 1fr 2fr;
+  font-weight: 300;
+  margin-top: 40px;
+  float: left;
+  margin-left: 50px;
+  line-height: 1.6em;
+}
+.downbox h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+
+  color: black;
+  line-height: 1.6em;
+  word-spacing: 1px;
+}
+.downbox .right {
+  color: grey;
+  width: 40%;
+  height: 200px;
+  float: right;
+  font-weight: 300;
+  word-spacing: 2px;
+  line-height: 1.6em;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+.downbox .left img {
+  border-radius: 15px;
+  height: 200px;
+  width: 300px;
+}
+
+/* ---MAX WIDTH : 1250 ----------------------------------------------- */
+
+@media (max-width: 1250px) {
+  header {
+    height: 20vh;
+    padding: 30px;
+    /* background-color:orange; */
+  }
+  header #headerlogo #mainLogo {
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  header #headerNavigation #Title h2 {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-left: 55px;
+  }
+
+  header #headerNavigation #Navigation nav #linkList li,
+  header #headerNavigation #Navigation nav #linkList li a {
+    font-size: 16px;
+  }
+  a:hover ~ #dropDown {
+    transition: 1s;
+    display: block;
+  }
+  header #headerNavigation #Navigation nav #navLinks {
+    border-right: 1.5px solid gray;
+    color: black;
+    padding-top: 1px;
+    transition: 1s;
+    padding-bottom: 1px;
+  }
+  #login {
+    padding: 8px;
+    padding-right: 10px;
+    color: white;
+    font-weight: 400;
+    font-style: bold;
+    margin-top: -10px;
+  }
+  #padding {
+    padding: 1vh;
+  }
+  header #headerNavigation #Navigation nav .dropDown {
+    position: relative;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-right: auto;
+    left: 0;
+  }
+
+  .downbox {
     float: bottom;
     background: rgb(241, 243, 245);
     border-radius: 15px;
     width: 1000x;
     min-height: 490px;
-    
+
     margin-left: 30px;
     margin-right: 30px;
-  font-family: "Kanit", serif;
-    
-}
+    font-family: "Kanit", serif;
+  }
 
-.downbox .left
-{
+  .downbox .left {
     color: grey;
     width: 40%;
     height: 200px;
@@ -151,31 +253,274 @@ header #headerNavigation #Navigation nav .dropDown  {
     float: left;
     margin-left: 50px;
     line-height: 1.6em;
-}
-.downbox h4
-{
-    font-size: 18px ;
+  }
+  .downbox h4 {
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
-    
+
     color: black;
     line-height: 1.6em;
     word-spacing: 1px;
-}
-.downbox .right
-{
+  }
+  .downbox .right {
     color: grey;
     width: 40%;
     height: 200px;
-   float: right;
+    float: right;
     font-weight: 300;
     word-spacing: 2px;
-    line-height: 1.6em; 
-  margin-right: 50px;
+    line-height: 1.6em;
+    margin-right: 50px;
     margin-top: 40px;
-} 
-.downbox .left img{
-  border-radius:15px;
-  height:200px;
-  width:300px;
+  }
+  .downbox p{
+    font-size:14px;
+  }
+  .downbox .left img {
+    border-radius: 15px;
+    height: 200px;
+    width: 300px;
+  }
+}
+
+
+/* ---MAX WIDTH : 1150 ----------------------------------------------- */
+
+@media (max-width: 1150px) {
+  header {
+    height: 18vh;
+    padding: 30px;
+    /* background-color:orange; */
+  }
+  header #headerlogo #mainLogo {
+    height: 85px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  header #headerNavigation #Title h2 {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 55px;
+  }
+
+  header #headerNavigation #Navigation nav #linkList li,
+  header #headerNavigation #Navigation nav #linkList li a {
+    font-size: 14px;
+  }
+  a:hover ~ #dropDown {
+    transition: 1s;
+    display: block;
+  }
+  header #headerNavigation #Navigation nav a {
+    width:100px;
+    /* margin-left:0px; */
+  }
+  header #headerNavigation #Navigation nav #navLinks {
+    border-right: 1.5px solid gray;
+    color: black;
+    padding-top: 1px;
+    transition: 1s;
+    padding-bottom: 1px;
+  }
+  
+  header #headerNavigation #Navigation nav{
+    margin-left:25px;
+  }
+  #login {
+    padding: 6px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: white;
+    font-weight: 400;
+    font-style: bold;
+    margin-top: -10px;
+    font-size:14
+  }
+  #padding {
+    padding: 1vh;
+  }
+  header #headerNavigation #Navigation nav .dropDown {
+    position: relative;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-right: auto;
+    left: 0;
+  }
+
+  .downbox {
+    float: bottom;
+    background: rgb(241, 243, 245);
+    border-radius: 15px;
+    width: 1000x;
+    min-height: 490px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "Kanit", serif;
+  }
+
+  .downbox .left {
+    color: grey;
+    width: 40%;
+    height: 200px;
+    margin-top: 60px;
+    grid-template-columns: 1fr 2fr;
+    font-weight: 300;
+    margin-top: 40px;
+    float: left;
+    margin-left: 50px;
+    line-height: 1.6em;
+  }
+  .downbox h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    color: black;
+    line-height: 1.6em;
+    word-spacing: 1px;
+  }
+  .downbox .right {
+    color: grey;
+    width: 40%;
+    height: 200px;
+    float: right;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.6em;
+    margin-right: 50px;
+    margin-top: 40px;
+  }
+  .downbox p{
+    font-size:12px;
+  }
+  .downbox .left img {
+    border-radius: 15px;
+    height: 160px;
+    width: 280px;
+  }
+}
+
+/* ---MAX WIDTH : 1050 ----------------------------------------------- */
+
+@media (max-width: 1150px) {
+  header {
+    height: 16vh;
+    padding: 30px;
+    /* background-color:orange; */
+  }
+  header #headerlogo #mainLogo {
+    height: 65px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  header #headerNavigation #Title h2 {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-left: 55px;
+  }
+
+  header #headerNavigation #Navigation nav #linkList li,
+  header #headerNavigation #Navigation nav #linkList li a {
+    font-size: 14px;
+  }
+  a:hover ~ #dropDown {
+    transition: 1s;
+    display: block;
+  }
+  header #headerNavigation #Navigation nav a {
+    width:100px;
+    /* margin-left:0px; */
+  }
+  header #headerNavigation #Navigation nav #navLinks {
+    border-right: 1.5px solid gray;
+    color: black;
+    padding-top: 1px;
+    transition: 1s;
+    padding-bottom: 1px;
+  }
+  
+  header #headerNavigation #Navigation nav{
+    margin-left:25px;
+  }
+  #login {
+    padding: 6px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color: white;
+    font-weight: 400;
+    font-style: bold;
+    margin-top: -10px;
+    font-size:14
+  }
+  #padding {
+    padding: 1vh;
+  }
+  header #headerNavigation #Navigation nav .dropDown {
+    position: relative;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-right: auto;
+    left: 0;
+  }
+
+  .downbox {
+    float: bottom;
+    background: rgb(241, 243, 245);
+    border-radius: 15px;
+    width: 1000x;
+    min-height: 490px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "Kanit", serif;
+  }
+
+  .downbox .left {
+    color: grey;
+    width: 40%;
+    height: 200px;
+    margin-top: 60px;
+    grid-template-columns: 1fr 2fr;
+    font-weight: 300;
+    margin-top: 40px;
+    float: left;
+    margin-left: 50px;
+    line-height: 1.6em;
+  }
+  .downbox h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    color: black;
+    line-height: 1.6em;
+    word-spacing: 1px;
+  }
+  .downbox .right {
+    color: grey;
+    width: 40%;
+    height: 200px;
+    float: right;
+    font-weight: 300;
+    word-spacing: 2px;
+    line-height: 1.6em;
+    margin-right: 50px;
+    margin-top: 40px;
+  }
+  .downbox p{
+    font-size:12px;
+  }
+  .downbox .left img {
+    border-radius: 15px;
+    height: 160px;
+    width: 280px;
+  }
 }
