@@ -1,0 +1,59 @@
+.form{
+    height:350px;
+    width:600px;
+    background-color: #D67BA8;
+    display:flex;
+    padding:40px;
+    margin-left:300px;
+    
+}
+.formLeftpart{
+    flex:1;
+}
+.formRightPart{
+    flex:1;
+    padding-left:120px;
+  
+}
+input[type="text"] {
+    width: 200px; 
+    height: 30px;
+}
+h2{
+    text-align:center;
+}
+input[type="email"] {
+    width: 200px; 
+    height: 30px;
+}
+input[type="tel"] {
+    width: 200px; 
+    height: 30px;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center; /* Center the button within its container */
+}
+.navbar{
+    height:40px;
+    width:500px;
+    display:flex;
+    justify-content: space-between;
+    background-color: azure;
+    margin-left:400px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+    
+}
+a:hover{
+    border:2px solid black;
+}
+.navbarUpperPart{
+    display:flex;
+    align-items:center;
+    margin-left: 400px;
+}
