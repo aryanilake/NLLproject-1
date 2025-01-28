@@ -1,0 +1,76 @@
+*
+{
+    font-family: "Kanit", serif;
+    
+   
+   
+}
+main{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main h1{
+    font-family: "Jockey One", serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+main h2{
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    color: #0090FF;
+}
+#container{
+    display: flex;
+    margin-top:15px;
+}
+#container a{
+    padding:10px;
+    margin-right: 10px;
+    text-align: center;
+    border:2px solid gray;
+    text-align: center;
+    font-style:bold;
+    border-radius:5px;
+    color:black;
+    font-style: bold;
+    font-family: "Kanit", serif;
+    text-decoration: none;
+}
+#container #all{
+    background-color:gray;
+    padding:10px;
+    color:white;
+}
+#container2{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+#container2 h3{
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+#container2 div{
+    width: 320px;
+    margin: 10px;
+    margin-top:15px;
+    text-align: left;
+    padding: 5px;
+}
+#container2 div img{
+    width:320px;
+    height:180px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+#container2 p{
+    font-family: "Kanit", serif;
+    color: grey;    
+    font-size: 16px;
+}
+
+
+
