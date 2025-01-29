@@ -3,122 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NLL Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="globalStyles.css">
+<link rel="stylesheet" href="index.css">
+
+    <title>NLL - Home Page</title>
 </head>
 <body>
-    <div class="navbarUpperPart">
-    <img class="logo" src="https://static.vecteezy.com/system/resources/previews/020/280/681/non_2x/nli-letter-logo-design-on-white-background-nli-creative-circle-letter-logo-concept-nli-letter-design-vector.jpg">
-    <h1  style="font-size:45px">NEW LEAP LABS</h1>
+    <main>
+    <header>
+        <div id="headerlogo" >
+            <img id="mainLogo" src="./images/mainLogoResize.png" alt="Loading...">
+        </div>
+        <div id="headerNavigation" >
+         <div id="Title">
+            <h2>
+                NEW LEAP LABS
+            </h2>
+         </div>
+         <div id="Navigation">
+            <nav>
+                    <!-- <div><a id="navLinks" href="#">Home</a></div>
+                    <div><a id="navLinks" href="#">About</a></div>
+                    <div><a id="navLinks" href="#">Be a HAM</a></div>
+                    <div><a id="navLinks" href="#">HFL 2018</a></div>
+                    <div><a id="login" href="#">Contact us</a></div> -->
+                    <ul id="linkList">
+                      <li><a id="navLinks" href="#">Home</a></li>
+                      <li><a id="navLinks" id="about" href="./mainAbout/about.html">About</a>
+                        <!--  <ul id='dropDown' >
+                          <li><a href="#">About Ham</a></li>
+                          <li><a href="#">IIH Trustees</a></li>
+                          <li><a href="#">IIH Life Member</a></li>
+                        </ul> --> 
+                      </li>
+                      <li><a id="navLinks" href="./ham/ham.html">Be a HAM</a></li>
+                      <li><a id="navLinks" href="./HFL 2018/index.html">HFL 2018</a></li>
+                      <li><a id="login" href="./Contact Us/index.html">Contact us</a></li>
+                    </ul>
+            </nav>
+         </div>
+        </div>
+    </header>
+    
+        <div id="padding" ></div>
+    <article>
+        <div id="leftContent" >
+            <div id="landingPageHeading" >
+            <h1>UNEARTH THE</h1>
+            <h1>FUTURE .TOMORROW</h1>
+            </div>   
+            <p>Unleashing the power of innovation technology for efficient and responsible extraction of natural resource - fueling the industries tomorrow.</p> 
+        </div>
+        <div id="rightContent" >
+            <div id="videoBlock">
+                <video id="mainPageVideo" controls>
+    <source src="./images/mainPageSampleVideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p>Drive into the story, from the industries to the future of  the world with us. Watch the leading future journey with us</p>
+  <nav>
+    <div>
+        <h3>12.5B</h3>
+        <p>Ton Extracts</p>
     </div>
-    <div class="navbar">
-       
-       
+    <div>
+        <h3>98.5%</h3>
+        <p>Client Satisfied</p>
+    </div>
+    <div>
+        <h3>26</h3>
+        <p>Countries</p>
+    </div>
+  </nav>
+            </div>
+        </div>
+    </article>
+    <div id="slideBar" >
+    <div class="box">
+    <div class="box-content">
+        <img src="./images//popPic1.jpg" alt="loading...">
+      <h2>Satellite</h2>
+      <p>All about satelite</p>
+      <div id="moreInformation" >
+        <h3>$199</h3>
+        <button>Pop</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-content">
+        <img src="./images//popPic2.jpg" alt="loading...">
+      <h2>Satellite</h2>
+      <p>All about satelite</p>
+      <div id="moreInformation" >
+        <h3>$199</h3>
+        <button>Pop</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-content">
+        <img src="./images//popPic3.jpg" alt="loading...">
+      <h2>Satellite</h2>
+      <p>All about satelite</p>
+      <div id="moreInformation" >
+        <h3>$199</h3>
+        <button>Pop</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-content">
+        <img src="./images//popPic6.jpg" alt="loading...">
+      <h2>Satellite</h2>
+      <p>All about satelite</p>
+      <div id="moreInformation" >
+        <h3>$199</h3>
+        <button>Pop</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-content">
+        <img src="./images//popPic8.jpg" alt="loading...">
+      <h2>Satellite</h2>
+      <p>All about satelite</p>
+      <div id="moreInformation" >
+        <h3>$199</h3>
+        <button>Pop</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="box-content">
+        <img src="./images//popPic9.jpg" alt="loading...">
+      <h2>Satellite</h2>
+      <p>All about satelite</p>
+      <div id="moreInformation" >
+        <h3>$199</h3>
+        <button>Pop</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-content">
+        <img src="./images//popPic10.jpg" alt="loading...">
+      <h2>Satellite</h2>
+      <p>All about satelite</p>
+      <div id="moreInformation" >
+        <h3>$199</h3>
+        <button>Pop</button>
+      </div>
+    </div>
+  </div>
+  
+  
+    </div>
+    </main>
+    <article id="bodyContent" >
+        <h2>HEADING</h2>
+        <p>A satellite or artificial satellite[a] is an object, typically a spacecraft, placed into orbit around a celestial body. They have a variety of uses, including communication relay, weather forecasting, navigation (GPS), broadcasting, scientific research, and Earth observation. Additional military uses are reconnaissance, early warning, signals intelligence and, potentially, weapon delivery. Other satellites include the final rocket stages that place satellites in orbit and formerly useful satellites that later become defunct.</p>
+        <br>
+        <p>A satellite or artificial satellite[a] is an object, typically a spacecraft, placed into orbit around a celestial body. They have a variety of uses, including communication relay, weather forecasting, navigation (GPS), broadcasting, scientific research, and Earth observation. Additional military uses are reconnaissance, early warning, signals intelligence and, potentially, weapon delivery. Other satellites include the final rocket stages that place satellites in orbit and formerly useful satellites that later become defunct.</p>
+        <div id="blockContainer" >
+            <div id="oddBlock" >
+                <h3>Mission</h3>
+                <p>"To design, deploy, and operate cutting-edge satellites that enhance communication, navigation, and environmental monitoring worldwide."</p>
+            </div>
+            <div id="evenBlock" >
+                <h3>Vision</h3>
+                <p>"Empowering global connectivity, exploration, and sustainable innovation through advanced satellite technology."</p>
+            </div>
+        </div>
+    </article>
+    <section class="scrollContainer" >
         
-        <a href="index.html" target="_blank">Home</a>
-        <a href="#">About</a>
-        <a href="Downloads.html">Downloads</a>
-        <a href="Month.html">In This Month</a>
-        <!-- <a href="login.html" target="_blank">Log In</a> -->
+            <div class="slider-nav">
+                <a href="#slide1"><i class="fa-solid fa-chevron-left"></i></a>
+            </div>
+        <div id="slider-wrapper" >
+            <div class="slider">
+                <div id="slide1">
+                    <div id="oddBox">
+                        <h3>Belief Sat</h3>
+                        <p>New Leap Initiative"- K J Somaiya Institute of Engineering and Information Technology's (KJSIEIT) flagship student innovation team added another feather in the cap with its proposal for developing a PocektQube standard satellite deployer and a nanosatellite being approved by ISRO as a part of PS4 - orbital platform program (Click here for info). The team specializes in developing inventive space-tech and rf design.</p>
+                    </div>
+                    <div id="evenBox">
+                        <img src="./images/popPic10.jpg" alt="Loading...">
+                    </div>
+                </div>
+                <div id="slide2">
+                    <div id="oddBox">
+                        <h3>Belief Sat</h3>
+                        <p>New Leap Initiative"- K J Somaiya Institute of Engineering and Information Technology's (KJSIEIT) flagship student innovation team added another feather in the cap with its proposal for developing a PocektQube standard satellite deployer and a nanosatellite being approved by ISRO as a part of PS4 - orbital platform program (Click here for info). The team specializes in developing inventive space-tech and rf design.</p>
+                    </div>
+                    <div id="evenBox">
+                        <img src="./images/popPic10.jpg" alt="Loading...">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+            <div class="slider-nav">
+                <a href="#slide2"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+    </section>
+
+    <div>
+      <div id="floatingTextContainer" >
+        <marquee  id='textFlow'  behavior="scroll" direction="left">
+  <p id="scrollingText" >This text will scroll automatically on the x-axis!</p>
+</marquee>
+    </div>
+    </div>
+    
+
+    <article id="linkContainer" >
+        <div class="boxLink" id="boxLink1">
+            <h3>Downloads</h3>
+            <p>Attention all VU Hams & SWLs!The WPC Wing, DOT, Ministry of Communications, Govt. of India has notified through the Office Memorandum File No. Project/ASMS/02/2019 (Part-1) dated 27 July 2020 that with effect from 1 August 2020 all applications for Amateur Radio are to be done only online</p>
+        </div>
+        <div class="boxLink" id="boxLink2">
+            <h3>Some Images</h3>
+            <div id="someImages" ></div>
+        </div>
+        <div class="boxLink" id="boxLink3">
+            <h3>Links Courtesy: NIAR/VU2JOS</h3>
+            <ol>
+                <li><p>Registration</p></li>
+                <li><p>Application for Examination</p></li>
+                <li><p>Application for License</p></li>
+                <li><p>Application for Permanent Change of Location</p></li>
+                <li><p>Application for Renewal</p></li>
+                <li><p>Application for Duplicate License / Renewal</p></li>
+                <li><p>Application for Reciprocal License for Foreign Nationals</p></li>
+                <li><p>All in one</p></li>
+            </ol>
+        </div>
+        <div class="boxLink" id="boxLink4">
+            <h3>Import of Amateur Radio Equipment : 2020-21</h3>
+            <p>Detailed article about import of equipment by Radio Amateurs in India written by     Mr. Devadas, VU2DH of Chennai whose profession is Shipping & International Freight Forwading is available</p>
+        </div>
+        <div class="boxLink" id="boxLink5">
+            <h3>Amateur Radio HF/VHF/UHF Repeater Stations in India :</h3>
+            <b>Compiled by Jose Jacob, VU2JOS,National Institute of Amateur Radio,NIAR.Please click the link below.</b>
+            <ul>
+                <li><p>For VHF/UHF Repeaters :Location Wise:</p></li>
+                <li><p>For VHF/UHF Repeaters :Frequency Wise::</p></li>
+                <li><p>For VHF/UHF Repeaters :Callsign Wise:</p></li>
+                <li><p>For VHF/UHF Nets :Nets Time Wise:</p></li>
+                <li><p>For VHF/UHFNets:Location Wise:</p></li>
+            </ul>
+        </div>
+    </article>
+    <br>
+    <br>
+    <div class="downbox">
+    <div class="left">
+        <h4> PROUD MOMENT </h4>
+        <img src="./images/proudMoment1.jpg" alt="try later">
         
+       <br> <p>Smt. Sonia Gandhi, VU2SON presenting the RG award 1996 to Dr. S.Sathyapal, VU2FI, Managing Trustee and Director IIH.On this occasion we recollect Two times Rajiv Gandhi National award received by IIH during 1995 and 1996 for best promotion of Amateur Radio in India and 1997 VU2IU received the award for establishing indigenous VHF repeater. Still it is active and net control VU3ITI on 145.200 plus shift between 6.30am - 7.15am.</p>
     </div>
-    <br>
-    <div class="body">
-        <div class="left-part">
-        <b style="font-size:30px">ASOC Exam</b>
-        <br>
-        <br>
-        REGISTRATION FOR ONLINE TUTORIALS
-<pre>IIH will conduct Ham Radio traning online on specific days & timings.You can
-listen,interact directly from your home.Introduction to Ham (Amateur)
-Radio & interaction" will be on saturday,4th JAN 2025,5.00pm.
-Note:Ham classes only on Saturdays 6.00pm-8.00pm and Sundays 9.30am
-to 11.30am.Dates are subject to change.Note batch consists of total 10
-classes duration 2 hours each considered as one batch.</pre>
-<li>Ham Radio rules,regulations and operating procedures.</li>
-<li>Communication network during </li> 
-<li>Basic Elections: Semi conductors, Filters, Transcevier Structures
-    Communication</li>
-<li>Radio wave (EM) Propagation, Aerials and Transmission lines.</li>   
-<br> 
-<div class="image1" >
-<img class="image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRftRNZutnZFZbviOemEr5FevPPNr4z-gufrQ&s">
-</div>
-<b class="requirement">Requirements:</b>
-<pre>For Admission: Please carry three passport size photos, Photocopy for
-date of birth proof: Passport or X standard Marks card or date of birth
-or aadhar card (Any one of these)</pre>
-</div>
-
-<div class="right-part">
-<b>Downloads</b>
-<pre>
-<li>About Ham Radio</li>
-<li>ASOC Examination Syllabus</li>
-<li>ASOC Examination FAQ</li>
-<li>Ham Radio Operating Procedure
- & Indian Wireless Telegraphs Rules</li>
-<li>IIH Affiliation Form</li>
-</pre>
-<br>
-<b>Activites</b>
-<pre>
-
-<li>Members meet on the last Sunday
-of everymonth to discuss on various
-topics and activities.</li>
-<li>Conducting regular training programmes
-in educational institutions and for the
-general public.</li>
-<li>Providing communication to all major
-sports events.</li>
-<li>Providing communications during disasters
-and natural calamities.</li>
-<li>Field days to train Ham operators to
-setup and handle effective communications
-during disasters are conducted at regular
-intervals.</li>
-<li>Seminars, Workshops and mockdrills
-are conducted periodically</li>
-</pre>
-</div>
+    <div class="right">
+        <h4> INSTITUE OF HAMS</h4>
+        <p>For more information about IIH or for graduating as a ham and for lectures and demos you can contact: Dr.Sathyapal (VU2FI) at the following addressHam Radio Station - VU2IIHRoom No:98, 2nd Floor, Gate No:2Sree Kanteerava Outdoor Stadium,Kasturba Road, Bangalore - 560 001Phone: +91 80 26664501Mobile: +91 94483 02677e-mail: ham7388@gmail.comIf you are a Ham you can catch us on the air - Dr. Sathyapal (VU2FI) checks in most of the nets.</p>
 
     </div>
-    <br>
-    <div class="footer">
-        <div class="footerLeftPart">
-        <b>Proud Moments</b>
-        <br>
-        <br>
- <img class="image3" src="https://thumbs.dreamstime.com/b/pleasant-nice-people-having-group-discussion-sharing-problems-positive-sitting-circle-speaking-their-problems-93095560.jpg"> 
- </div>
- <div class="footerRightPart1">
- <pre>Smt. Sonia Gandhi, VU2SON presenting the
-RG award 1996 to Dr. S.Sathyapal, VU2FI,
-Managing Trustee and Director IIH.On this
-occasion we recollect Two times Rajiv Gandhi
-National award received by IIH during 1995
-and 1996 for best promotion of Amateur Radio
-in India and 1997 VU2IU received the award for
-establishing indigenous VHF repeater. Still it
-is active and net control VU3ITI on 145.200 
-plus shift between 6.30am - 7.15am.</pre>
- </div>
- <div class="footerRightPart2">
-   <pre>For more information about IIH or
-for graduating as a ham and for lectures
-and demos you can contact: Dr.Sathyapal
-(VU2FI) at the following address Ham Radio
-Station - VU2IIH Room No:98, 2nd Floor,
-Gate No:2Sree Kanteerava Outdoor Stadium,
-Kasturba Road, Bangalore - 560 001Phone:
-+91 80 26664501Mobile: +91 94483 02677e-mail:
-ham7388@gmail.comIf you are a Ham you can 
-catch us on the air - Dr. Sathyapal (VU2FI)
- checks in most of the nets.
-   </pre>
- </div>
-    </div>
-  <script src="script.js"></script>  
+
+
+</div>
 </body>
 </html>
