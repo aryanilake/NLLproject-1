@@ -297,6 +297,82 @@ ol li{
   font-weight: 300;
 }
 
+/* STYLEING OF MODAL------------------------------------------- */
+.modal {
+
+  display: none; 
+
+  position: fixed; 
+
+  z-index: 1; 
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+/* Modal content */
+
+.modal-content {
+
+  background-color: white;
+
+  margin: 15% auto;
+
+  padding: 10px; 
+
+  width: 500px;
+
+  border-radius: 8px;
+
+}
+
+/* Close button */
+
+.close {
+
+  float: right;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+}
+
+/* Editing  Modal  */
+#modalContainer {
+  display: flex;
+  flex-direction: row;
+  padding:10px;
+  align-items: center;
+  justify-content: center;
+}
+#modalContainer img{
+  height:200px;
+  width: 200px;
+  border-radius: 10px;
+}
+#modalInfoContainer{
+  padding:10px;
+  margin-left: 10px;
+}
+#modalInfoContainer h2{
+  font-family: "Kanit", serif;
+  font-size: 20px;
+}
+#modalInfoContainer p{
+  font-family: "Kanit", serif;
+  font-size: 15px;
+  color:gray;
+
+}
 
 /* -----MAX WIDTH : 1250 ---------------------------------- */
 
