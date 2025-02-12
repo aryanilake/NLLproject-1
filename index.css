@@ -247,6 +247,7 @@ ol li{
   color:gray;
   padding:5px;
   font-size: 16px;
+  text-align:justify;
 }
 .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,.scrollContainer #slider-wrapper .slider #slide2 #evenBox img{
   width:300px;
