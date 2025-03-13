@@ -23,12 +23,16 @@ main{
     float: right;
 }
 
+.flat article h3 {
+    margin-bottom: 10px;
+}
 
 
 .flat article p {
     font-family: "Kanit", serif;
     font-weight: 300;
     font-size: 16px;
+    text-align: justify;
     color:gray;
 }
 
@@ -172,6 +176,7 @@ color:orange;
     background-color: whitesmoke;
     border-radius: 15px;
   }
+ 
   h3{
     font-family: "Kanit", serif;
 
