@@ -1,0 +1,12 @@
+article{
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+article {
+    text-align: justify;
+
+    font-family: "Kanit", serif;
+}
