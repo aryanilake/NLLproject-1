@@ -256,7 +256,7 @@ header #headerNavigation #Navigation nav .dropDown {
     /* background-color:orange; */
   }
   header #headerlogo #mainLogo {
-    height: 100px;
+    height: 120px;
     margin-right: 10px;
     margin-left: 20px;
   }
@@ -367,7 +367,7 @@ header #headerNavigation #Navigation nav .dropDown {
     /* background-color:orange; */
   }
   header #headerlogo #mainLogo {
-    height: 85px;
+    height: 95px;
     margin-right: 10px;
     margin-left: 20px;
   }
@@ -487,9 +487,10 @@ header #headerNavigation #Navigation nav .dropDown {
     /* background-color:orange; */
   }
   header #headerlogo #mainLogo {
-    height: 65px;
+    height: 85px;
     margin-right: 10px;
     margin-left: 20px;
+    margin-top: 10px;
   }
   header #headerNavigation #Title h2 {
     font-family: "Kanit", serif;
