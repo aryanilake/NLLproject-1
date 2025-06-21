@@ -1,0 +1,28 @@
+
+#linkSection #linkNav a{
+    text-decoration: none;
+    font-family: "Kanit", serif;
+    color:white;
+    background-color:#444444;
+    padding:8px;
+    font-size:  16px;
+    border-radius:8px;
+    margin:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 5px 5px 5px #888888;
+}
+#linkSection #linkNav {
+    /* float:right; */
+    padding-right:40px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#linkSection{
+    width:100%;
+    height:60px;
+    text-align:right;
+    align-items:center;
+    justify-content:center;
+    /* padding:20px */
+}
