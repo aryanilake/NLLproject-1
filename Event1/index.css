@@ -39,3 +39,65 @@ main{
     border-radius: 20px;
     border: 1px solid gray;
 }   
+
+@media(max-width:850px){
+    #Pagetitle{
+    font-family: "Kanit", serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding:5px;
+    margin-bottom: 10px;
+    justify-content: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    padding: 15px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+main p{
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    /* font-weight: 600; */
+    /* padding:2px; */
+    color: gray;    
+    justify-content: justify;
+    /* margin-top: 5px; */
+}
+main{
+    padding: 10px;
+    /* display: flex; */
+}
+#Image{
+    width: 100%;
+    float: none;
+    height: 180px;
+    background-color: gray;
+    margin: 10px;
+    /* margin-bottom: 15px; */
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}   
+#ImageOdd{
+    
+    width: 100%;
+    float: none;
+    height: 180px;
+    background-color: gray;
+    margin: 10px;
+    /* margin-bottom: 15px; */
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}   
+}

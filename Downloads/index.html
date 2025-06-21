@@ -15,37 +15,71 @@
 <body>
  <!-- ---HEADER----------------------------------------------------------------------- -->
     <header>
-        <div id="headerlogo" >
-            <a href="../index.html">
-            <img id="mainLogo" src="../images/mainLogo.png" alt="Loading...">
-            </a>
+      <div id="headerlogo">
+        <a href="#">
+          <img id="mainLogo" src="../images/mainLogo.png" alt="Loading...">
+        </a>
+      </div>
+      <div id="headerNavigation">
+        <div id="Title">
+          <h2>
+            CROWN
+          </h2>
         </div>
-        <div id="headerNavigation" >
-         <div id="Title">
-            <h2>
-                CROWN
-            </h2>
-         </div>
-         <div id="Navigation">
-            <nav>
-                   
-                    <ul id="linkList">
-                      <li><a id="navLinks" href="../index.html">Home</a></li>
-                      <li><a id="navLinks" id="about" href="../mainAbout/about.html">About</a>
-                        <!-- <ul id='dropDown' >
-                          <li><a href="#">About Ham</a></li>
-                          <li><a href="#">IIH Trustees</a></li>
-                          <li><a href="#">IIH Life Member</a></li>
-                        </ul> -->
-                      </li>
-                      <li><a id="navLinks" href="../ham/ham.html">HAM</a></li>
-                      <li><a id="navLinks" href="../Events/index.html">Events</a></li>
-                      <li><a id="login" href="../Contact Us/index.html">Contact us</a></li>
-                    </ul>
-            </nav>
-         </div>
+        <div id="Navigation">
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul id="linkList">
+              <li><a id="navLinks" href="../index.html">Home</a></li>
+              <li><a id="navLinks" id="about" href="../mainAbout/about.html">About</a></li>
+              <li><a id="navLinks" href="../ham/ham.html">HAM</a></li>
+              <li><a id="navLinks" href="../Events/index.html">Events</a></li>
+              <li><a id="login" href="../Contact Us/index.html">Contact us</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
+    <div id="padding"></div>
+  
+    
+    <div id="padding"></div>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('#Navigation nav');
+        
+        menuBtn.addEventListener('click', function() {
+          nav.classList.toggle('active');
+          
+          // Change icon between bars and times
+          const icon = this.querySelector('i');
+          if (nav.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+          } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+          }
+        });
+        
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('#linkList a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 900) {
+              nav.classList.remove('active');
+              const icon = menuBtn.querySelector('i');
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      });
+    </script>
     <!-- ----MAIN----------------------------------------------------------------------- -->
      <main>
       <article>

@@ -1,485 +1,11 @@
-* {
-  scroll-behavior: smooth;
-}
-main {
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-main article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 30px;
-  width: 84%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-}
-main article #leftContent {
-  width: 50%;
-  padding: 10px;
-  /* padding-left:30px; */
-}
-main article #landingPageHeading h1 {
-  font-family: "Kanit", serif;
-  font-size: 50px;
-}
-main article p {
-  font-family: "Kanit", serif;
-  font-size: 20px;
-  font-weight: 200;
-}
-main article #rightContent #videoBlock #mainPageVideo {
-  height: 160px;
-  width: 280px;
-  filter: grayscale(100%) brightness(0.8) contrast(120%);
-}
-main article #rightContent #videoBlock {
-  width: 280px;
-  /* margin-right:20px; */
-}
-main article #rightContent p {
-  font-size: 15px;
-  font-family: "Kanit", serif;
-}
-main article #rightContent nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-main article #rightContent nav div {
-  font-size: 15px;
-  text-align: center;
-  font-family: "Kanit", serif;
-  /* position:absolute; */
-}
-#slideBar {
-  display: inline-flex;
-  flex-direction: row;
-
-  /* overflow-x: scroll; */
-}
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-.box {
-  width: 190px;
-  height: 250px;
-  background-color: orange;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  transition: transform 0.8s ease, box-shadow 0.5s ease;
-  filter: grayscale(100%);
-}
-
-/* Hover effect on the box */
-.box:hover {
-  transform: translateY(-150px); /* Moves the box up */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
-  filter: grayscale(0%);
-}
-
-.box-content {
-  position: absolute; /* Keeps content static */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  /* text-align: center; */
-  font-size: 18px;
-  font-family: "Kanit", serif;
-}
-
-#slideBar img {
-  width: 190px;
-  height: 150px;
-  margin-top: -20px;
-}
-
-#slideBar .box h2 {
-  font-family: "Kanit", serif;
-  font-size: 20px;
-  font-weight: 500;
-  padding-left: 10px;
-}
-#slideBar .box p {
-  font-family: "Kanit", serif;
-  font-size: 16px;
-  font-weight: 300;
-  padding-left: 10px;
-}
-#slideBar .box button {
-  font-family: "Kanit", serif;
-  outline: none;
-  border: none;
-  background-color: white;
-  color: black;
-  padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
-}
-#slideBar .box #moreInformation {
-  display: flex;
-  flex-direction: row;
-  padding-left: 10px;
-  padding-right: 10px;
-  justify-content: space-between;
-}
-#slideBar .box h3 {
-  font-size: 18px;
-  /* padding-left: 10px; */
-  font-weight: 400;
-}
-ul li {
-  list-style: none;
-}
-ol li {
-  list-style: none;
-}
-#bodyContent {
-  padding: 20px;
-  height: 100vh;
-  font-family: "Kanit", serif;
-  width: 90%;
-  margin-left: auto;
-  text-align: center;
-  margin-right: auto;
-}
-#bodyContent h2 {
-  padding: 10px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-#bodyContent p {
-  padding: 10px;
-  text-align: center;
-  color: gray;
-  font-weight: 300;
-}
-
-#bodyContent #blockContainer {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
-#bodyContent #blockContainer #oddBlock {
-  text-align: center;
-  width: 40%;
-  padding: 20px;
-}
-#bodyContent #blockContainer #evenBlock {
-  text-align: center;
-  width: 40%;
-  padding: 20px;
-  background-color: whitesmoke;
-  border-radius: 15px;
-}
-
-.scrollContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
-  background-color: rgb(241, 243, 245);
-}
-
-.scrollContainer a {
-  padding: 15px;
-  background-color: gray;
-  border-radius: 50px;
-  height: 50px;
-  width: 50px;
-  text-decoration: none;
-  color: white;
-  margin: 10px;
-  font-size: 18px;
-}
-
-.scrollContainer #slider-wrapper {
-  overflow-x: scroll;
-  width: 100%;
-  transition: 0.8s;
-}
-
-#achievementHeading {
-  color: white;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  font-size: 22px;
-  background-color: orange;
-  width: 100%;
-  font-family: "Kanit", serif;
-  font-weight: 600;
-  border-radius: 10px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#sliderImage {
-  height: 300px;
-  width: 300px;
-  padding: 20px;
-
-  align-items: center;
-  justify-content: center;
-}
-
-/* #slideImageContainer {
-  height: 100%;
-  width: 300px;
-  align-items: center;
-  justify-content: center;
-} */
-#slideContentContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-#slideInfoContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 10px;
-  align-items: justify;
-  width: 60%;
-}
-#scrollingText {
-  font-family: "Kanit", serif;
-  font-size: 18px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #fff;
-  color: gray;
-  font-weight: 400;
-}
-
-#linkContainer {
-  background-color: rgb(241, 243, 245);
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex: 1;
-  justify-content: space-around;
-  margin-left: 30px;
-  margin-right: 30px;
-  border-radius: 15px;
-}
-#linkContainer .boxLink {
-  width: 40%;
-  /* display:flex; */
-  font-family: "Kanit", serif;
-  flex-wrap: wrap;
-  margin: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-  display: block;
-}
-#linkContainer .boxLink #someImages {
-  height: 150px;
-  background-color: white;
-  width: 300px;
-  border-radius: 15px;
-  margin-top: 10px;
-}
-#linkContainer .boxLink p {
-  color: gray;
-  font-weight: 300;
-}
-
-/* STYLEING OF MODAL------------------------------------------- */
-.modal {
-  display: none;
-
-  position: fixed;
-
-  z-index: 1;
-
-  left: 0;
-
-  top: 0;
-
-  width: 100%;
-
-  height: 100%;
-
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Modal content */
-
-.modal-content {
-  background-color: white;
-
-  margin: 15% auto;
-
-  padding: 10px;
-
-  width: 500px;
-
-  border-radius: 8px;
-}
-
-/* Close button */
-
-.close {
-  float: right;
-
-  font-size: 24px;
-
-  cursor: pointer;
-}
-
-/* Editing  Modal  */
-#modalContainer {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
-}
-#modalContainer img {
-  height: 200px;
-  width: 200px;
-  border-radius: 10px;
-}
-#modalInfoContainer {
-  padding: 10px;
-  margin-left: 10px;
-}
-#modalInfoContainer h2 {
-  font-family: "Kanit", serif;
-  font-size: 20px;
-}
-#modalInfoContainer p {
-  font-family: "Kanit", serif;
-  font-size: 15px;
-  color: gray;
-}
-
-/* ---AUTOMATIC SLIDER------------------- */
-#sliderContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  background: #f0f0f0;
-  padding: 20px;
-}
-.slider {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: white;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
-}
-
-.slides {
-  display: flex;
-  width: 120%;
-  height: 100%;
-  transition: transform 1s ease-in-out;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: flex-start;
-  display: flex;
-}
-
-button:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-#prev {
-  left: 10px;
-  position: absolute;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.534);
-  top: 45%;
-  border-radius: 30px;
-  border: 2px solid white;
-  font-weight: bold;
-  font-size: 18px;
-}
-#next {
-  right: 10px;
-  position: absolute;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.534);
-  top: 45%;
-  border-radius: 30px;
-  color: black;
-  border: 2px solid white;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* ---SLIDER CONTENT EDITING-------------------------------- */
-
-#blockLeft {
-  display: flex;
-  flex-direction: row;
-  width: 82%;
-  align-items: center;
-}
-#blockLeft #image {
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-#blockLeft h2 {
-  font-family: "Kanit", serif;
-  font-size: 25px;
-  font-weight: 600;
-  padding: 5px;
-}
-#blockLeft p {
-  font-family: "Kanit", serif;
-  font-size: 15px;
-  padding: 5px;
-  font-weight: 300;
-  color: gray;
-  text-align: justify;
-}
-#blockLeft button {
-  font-family: "Kanit", serif;
-  font-size: 15px;
-  padding: 5px;
-  font-weight: 300;
-  color: white;
-  background-color: orange;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* -----MAX WIDTH : 1250 ---------------------------------- */
-
-@media (max-width: 1250px) {
+  * {
+    scroll-behavior: smooth;
+  }
+  main {
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
   main article {
     display: flex;
     flex-direction: row;
@@ -497,24 +23,24 @@ button:hover {
   }
   main article #landingPageHeading h1 {
     font-family: "Kanit", serif;
-    font-size: 40px;
+    font-size: 50px;
   }
   main article p {
     font-family: "Kanit", serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
   }
   main article #rightContent #videoBlock #mainPageVideo {
-    height: 140px;
-    width: 230px;
+    height: 160px;
+    width: 280px;
     filter: grayscale(100%) brightness(0.8) contrast(120%);
   }
   main article #rightContent #videoBlock {
-    width: 230px;
+    width: 280px;
     /* margin-right:20px; */
   }
   main article #rightContent p {
-    font-size: 13px;
+    font-size: 15px;
     font-family: "Kanit", serif;
   }
   main article #rightContent nav {
@@ -523,14 +49,10 @@ button:hover {
     justify-content: space-between;
   }
   main article #rightContent nav div {
-    font-size: 13px;
-    text-align: justify;
-
+    font-size: 15px;
+    text-align: center;
     font-family: "Kanit", serif;
     /* position:absolute; */
-  }
-  article nav div p {
-    font-size: 16px;
   }
   #slideBar {
     display: inline-flex;
@@ -543,7 +65,7 @@ button:hover {
   }
 
   .box {
-    width: 180px;
+    width: 190px;
     height: 250px;
     background-color: orange;
     border-radius: 10px;
@@ -555,7 +77,7 @@ button:hover {
 
   /* Hover effect on the box */
   .box:hover {
-    transform: translateY(-140px); /* Moves the box up */
+    transform: translateY(-150px); /* Moves the box up */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
     filter: grayscale(0%);
   }
@@ -572,14 +94,14 @@ button:hover {
   }
 
   #slideBar img {
-    width: 181px;
-    height: 145px;
+    width: 190px;
+    height: 150px;
     margin-top: -20px;
   }
 
   #slideBar .box h2 {
     font-family: "Kanit", serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     padding-left: 10px;
   }
@@ -605,42 +127,44 @@ button:hover {
     flex-direction: row;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 8px;
     justify-content: space-between;
   }
   #slideBar .box h3 {
-    font-size: 16px;
+    font-size: 18px;
     /* padding-left: 10px; */
     font-weight: 400;
   }
-
+  ul li {
+    list-style: none;
+  }
+  ol li {
+    list-style: none;
+  }
   #bodyContent {
     padding: 20px;
     height: 100vh;
     font-family: "Kanit", serif;
     width: 90%;
     margin-left: auto;
+    text-align: center;
     margin-right: auto;
   }
   #bodyContent h2 {
-    padding: 10px;
-    text-align: justify;
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 20px;
     padding: 10px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
   }
   #bodyContent p {
     padding: 10px;
-    text-align: justify;
+    text-align: center;
     color: gray;
     font-weight: 300;
-    font-size: 14px;
   }
 
   #bodyContent #blockContainer {
@@ -690,65 +214,53 @@ button:hover {
     transition: 0.8s;
   }
 
-  .scrollContainer #slider-wrapper .slider {
-    display: flex;
-    width: 200%;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1,
-  .scrollContainer #slider-wrapper .slider #slide2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  #achievementHeading {
+    color: white;
     align-items: center;
-    margin: 0 auto;
-    /* width: flex; */
-    flex: 1;
-    text-align: justify;
-    background-color: rgb(241, 243, 245);
-    height: 80vh;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #oddBox,
-  .scrollContainer #slider-wrapper .slider #slide2 #oddBox {
-    width: 40%;
-    text-align: justify;
-    background-color: white;
-    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
     padding: 10px;
+    font-size: 22px;
+    background-color: orange;
+    width: 100%;
     font-family: "Kanit", serif;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  .scrollContainer
-    #slider-wrapper
-    .slider
-    #slide1
-    #oddBox
-    h3
-    .scrollContainer
-    #slider-wrapper
-    .slider
-    #slide2
-    #oddBox
-    h3 {
-    padding: 10px;
-    font-size: 18px;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #oddBox p,
-  .scrollContainer #slider-wrapper .slider #slide2 #oddBox p {
-    font-weight: 300;
-    color: gray;
-    padding: 5px;
-    font-size: 14px;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,
-  .scrollContainer #slider-wrapper .slider #slide2 #evenBox img {
+  #sliderImage {
+    height: 300px;
     width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    margin: 10px;
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* #slideImageContainer {
+    height: 100%;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+  } */
+  #slideContentContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  #slideInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    align-items: justify;
+    width: 60%;
   }
   #scrollingText {
     font-family: "Kanit", serif;
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #fff;
@@ -783,1005 +295,11 @@ button:hover {
     border-radius: 15px;
     margin-top: 10px;
   }
-  #linkContainer .boxLink {
-    font-size: 16px;
-  }
   #linkContainer .boxLink p {
     color: gray;
     font-weight: 300;
-    font-size: 14px;
   }
 
-  /* STYLEING OF MODAL------------------------------------------- */
-  .modal {
-    display: none;
-
-    position: fixed;
-
-    z-index: 1;
-
-    left: 0;
-
-    top: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  /* Modal content */
-
-  .modal-content {
-    background-color: white;
-
-    margin: 15% auto;
-
-    padding: 10px;
-
-    width: 500px;
-
-    border-radius: 8px;
-  }
-
-  /* Close button */
-
-  .close {
-    float: right;
-
-    font-size: 24px;
-
-    cursor: pointer;
-  }
-
-  /* Editing  Modal  */
-  #modalContainer {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  #modalContainer img {
-    height: 160px;
-    width: 200px;
-    border-radius: 10px;
-  }
-  #modalInfoContainer {
-    padding: 10px;
-    margin-left: 10px;
-  }
-  #modalInfoContainer h2 {
-    font-family: "Kanit", serif;
-    font-size: 18px;
-  }
-  #modalInfoContainer p {
-    font-family: "Kanit", serif;
-    font-size: 12px;
-    color: gray;
-  }
-
-  /* ---AUTOMATIC SLIDER------------------- */
-  #sliderContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background: #f0f0f0;
-    padding: 20px;
-  }
-  .slider {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: white;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .slides {
-    display: flex;
-    width: 120%;
-    height: 100%;
-    transition: transform 1s ease-in-out;
-  }
-
-  .slide {
-    width: 100%;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: flex-start;
-    display: flex;
-  }
-
-  button:hover {
-    background: rgba(0, 0, 0, 0.8);
-  }
-
-  #prev {
-    left: 10px;
-    position: absolute;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.534);
-    top: 45%;
-    border-radius: 30px;
-    border: 2px solid white;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  #next {
-    right: 10px;
-    position: absolute;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.534);
-    top: 45%;
-    border-radius: 30px;
-    color: black;
-    border: 2px solid white;
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  /* ---SLIDER CONTENT EDITING-------------------------------- */
-
-  #blockLeft {
-    display: flex;
-    flex-direction: row;
-    width: 82%;
-    align-items: center;
-  }
-  #blockLeft #image {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
-  #blockLeft h2 {
-    font-family: "Kanit", serif;
-    font-size: 22px;
-    font-weight: 600;
-    padding: 5px;
-  }
-  #blockLeft p {
-    font-family: "Kanit", serif;
-    font-size: 12px;
-    padding: 5px;
-    font-weight: 300;
-    color: gray;
-    text-align: justify;
-  }
-  #blockLeft button {
-    font-family: "Kanit", serif;
-    font-size: 12px;
-    padding: 4px;
-    font-weight: 300;
-    color: white;
-    background-color: orange;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-/* ---MAX WIDTH:1150----------------------------------------- */
-@media (max-width: 1150px) {
-  main article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 30px;
-    width: 84%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-  }
-  main article #leftContent {
-    width: 50%;
-    padding: 10px;
-    /* padding-left:30px; */
-  }
-  main article #landingPageHeading h1 {
-    font-family: "Kanit", serif;
-    font-size: 35px;
-  }
-  main article p {
-    font-family: "Kanit", serif;
-    font-size: 16px;
-    font-weight: 200;
-  }
-  main article #rightContent #videoBlock #mainPageVideo {
-    height: 120px;
-    width: 210px;
-    filter: grayscale(100%) brightness(0.8) contrast(120%);
-  }
-  main article #rightContent #videoBlock {
-    width: 210px;
-    /* margin-right:20px; */
-  }
-  main article #rightContent p {
-    font-size: 11px;
-    font-family: "Kanit", serif;
-  }
-  main article #rightContent nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  main article #rightContent nav div {
-    font-size: 11px;
-    text-align: justify;
-    font-family: "Kanit", serif;
-    /* position:absolute; */
-  }
-  article nav div p {
-    font-size: 14px;
-  }
-  #slideBar {
-    display: inline-flex;
-    flex-direction: row;
-
-    /* overflow-x: scroll; */
-  }
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  .box {
-    width: 150px;
-    height: 220px;
-    background-color: orange;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: transform 0.8s ease, box-shadow 0.5s ease;
-    filter: grayscale(100%);
-  }
-
-  /* Hover effect on the box */
-  .box:hover {
-    transform: translateY(-110px); /* Moves the box up */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
-    filter: grayscale(0%);
-  }
-
-  .box-content {
-    position: absolute; /* Keeps content static */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    /* text-align: center; */
-    font-size: 18px;
-    font-family: "Kanit", serif;
-  }
-
-  #slideBar img {
-    width: 151px;
-    height: 135px;
-    margin-top: -20px;
-  }
-
-  #slideBar .box h2 {
-    font-family: "Kanit", serif;
-    font-size: 13px;
-    font-weight: 500;
-    padding-left: 10px;
-  }
-  #slideBar .box p {
-    font-family: "Kanit", serif;
-    font-size: 14px;
-    font-weight: 300;
-    padding-left: 10px;
-  }
-  #slideBar .box button {
-    font-family: "Kanit", serif;
-    outline: none;
-    border: none;
-    background-color: white;
-    color: black;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  #slideBar .box #moreInformation {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 8px;
-    justify-content: space-between;
-  }
-  #slideBar .box h3 {
-    font-size: 14px;
-    /* padding-left: 10px; */
-    font-weight: 400;
-  }
-
-  #bodyContent {
-    padding: 20px;
-    height: 100vh;
-    font-family: "Kanit", serif;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #bodyContent h2 {
-    padding: 10px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  #bodyContent p {
-    padding: 10px;
-    text-align: justify;
-    color: gray;
-    font-weight: 300;
-    font-size: 12px;
-  }
-
-  #bodyContent #blockContainer {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 15px;
-  }
-  #bodyContent #blockContainer #oddBlock {
-    text-align: center;
-    width: 40%;
-    padding: 15px;
-  }
-  #bodyContent #blockContainer #oddBlock h3,
-  #bodyContent #blockContainer #evenBlock h3 {
-    font-size: 15px;
-  }
-  #bodyContent #blockContainer #evenBlock {
-    text-align: center;
-    width: 40%;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 15px;
-  }
-
-  .scrollContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: rgb(241, 243, 245);
-  }
-
-  .scrollContainer a {
-    padding: 13px;
-    background-color: gray;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    font-size: 15px;
-  }
-
-  .scrollContainer #slider-wrapper {
-    overflow-x: scroll;
-    width: 100%;
-    transition: 0.8s;
-  }
-
-  .scrollContainer #slider-wrapper .slider {
-    display: flex;
-    width: 200%;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1,
-  .scrollContainer #slider-wrapper .slider #slide2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    /* width: flex; */
-    flex: 1;
-    text-align: justify;
-    background-color: rgb(241, 243, 245);
-    height: 80vh;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #oddBox,
-  .scrollContainer #slider-wrapper .slider #slide2 #oddBox {
-    width: 40%;
-    text-align: justify;
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    font-family: "Kanit", serif;
-  }
-
-  .scrollContainer
-    #slider-wrapper
-    .slider
-    #slide1
-    #oddBox
-    h3
-    .scrollContainer
-    #slider-wrapper
-    .slider
-    #slide2
-    #oddBox
-    h3 {
-    padding: 10px;
-    font-size: 16px;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #oddBox p,
-  .scrollContainer #slider-wrapper .slider #slide2 #oddBox p {
-    font-weight: 300;
-    color: gray;
-    padding: 5px;
-    font-size: 12px;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,
-  .scrollContainer #slider-wrapper .slider #slide2 #evenBox img {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    margin: 10px;
-  }
-  #scrollingText {
-    font-family: "Kanit", serif;
-    font-size: 14px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #fff;
-    color: gray;
-    font-weight: 400;
-  }
-
-  #linkContainer {
-    background-color: rgb(241, 243, 245);
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 15px;
-  }
-  #linkContainer .boxLink {
-    width: 40%;
-    /* display:flex; */
-    font-family: "Kanit", serif;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    display: block;
-  }
-  #linkContainer .boxLink #someImages {
-    height: 130px;
-    background-color: white;
-    width: 300px;
-    border-radius: 15px;
-    margin-top: 10px;
-  }
-  #linkContainer .boxLink h3 {
-    font-size: 14px;
-  }
-  #linkContainer .boxLink {
-    font-size: 14px;
-  }
-  #linkContainer .boxLink p {
-    color: gray;
-    font-weight: 300;
-    font-size: 12px;
-  }
-  #achievementHeading {
-    font-size: 16px;
-  }
-  /* STYLEING OF MODAL------------------------------------------- */
-  .modal {
-    display: none;
-
-    position: fixed;
-
-    z-index: 1;
-
-    left: 0;
-
-    top: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  /* Modal content */
-
-  .modal-content {
-    background-color: white;
-
-    margin: 15% auto;
-
-    padding: 10px;
-
-    width: 500px;
-
-    border-radius: 8px;
-  }
-
-  /* Close button */
-
-  .close {
-    float: right;
-
-    font-size: 24px;
-
-    cursor: pointer;
-  }
-
-  /* Editing  Modal  */
-  #modalContainer {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-  }
-  #modalContainer img {
-    height: 100px;
-    width: 160px;
-    border-radius: 10px;
-  }
-  #modalInfoContainer {
-    padding: 10px;
-    margin-left: 10px;
-  }
-  #modalInfoContainer h2 {
-    font-family: "Kanit", serif;
-    font-size: 15px;
-  }
-  #modalInfoContainer p {
-    font-family: "Kanit", serif;
-    font-size: 10px;
-    color: gray;
-  }
-
-  /* ---AUTOMATIC SLIDER------------------- */
-  #sliderContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background: #f0f0f0;
-    padding: 20px;
-  }
-  .slider {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background: white;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .slides {
-    display: flex;
-    width: 120%;
-    height: 100%;
-    transition: transform 1s ease-in-out;
-  }
-
-  .slide {
-    width: 100%;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: flex-start;
-    display: flex;
-  }
-
-  button:hover {
-    background: rgba(0, 0, 0, 0.8);
-  }
-
-  #prev {
-    left: 10px;
-    position: absolute;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.534);
-    top: 45%;
-    border-radius: 30px;
-    border: 2px solid white;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  #next {
-    right: 10px;
-    position: absolute;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.534);
-    top: 45%;
-    border-radius: 30px;
-    color: black;
-    border: 2px solid white;
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  /* ---SLIDER CONTENT EDITING-------------------------------- */
-
-  #blockLeft {
-    display: flex;
-    flex-direction: row;
-    width: 82%;
-    align-items: center;
-  }
-  #blockLeft #image {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
-  #blockLeft h2 {
-    font-family: "Kanit", serif;
-    font-size: 25px;
-    font-weight: 600;
-    padding: 5px;
-  }
-  #blockLeft p {
-    font-family: "Kanit", serif;
-    font-size: 15px;
-    padding: 5px;
-    font-weight: 300;
-    color: gray;
-    text-align: justify;
-  }
-  #blockLeft button {
-    font-family: "Kanit", serif;
-    font-size: 15px;
-    padding: 5px;
-    font-weight: 300;
-    color: white;
-    background-color: orange;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-/* ---MAX WIDTH:1050----------------------------------------- */
-@media (max-width: 950px) {
-  * {
-    display: none;
-  }
-  main article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 30px;
-    width: 84%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-  }
-  main article #leftContent {
-    width: 50%;
-    padding: 10px;
-    /* padding-left:30px; */
-  }
-  main article #landingPageHeading h1 {
-    font-family: "Kanit", serif;
-    font-size: 35px;
-  }
-  main article p {
-    font-family: "Kanit", serif;
-    font-size: 16px;
-    font-weight: 200;
-  }
-  main article #rightContent #videoBlock #mainPageVideo {
-    height: 120px;
-    width: 210px;
-    filter: grayscale(100%) brightness(0.8) contrast(120%);
-  }
-  main article #rightContent #videoBlock {
-    width: 210px;
-    /* margin-right:20px; */
-  }
-  main article #rightContent p {
-    font-size: 11px;
-    font-family: "Kanit", serif;
-  }
-  main article #rightContent nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  main article #rightContent nav div {
-    font-size: 11px;
-    text-align: justify;
-    font-family: "Kanit", serif;
-    /* position:absolute; */
-  }
-  article nav div p {
-    font-size: 14px;
-  }
-  #slideBar {
-    display: inline-flex;
-    flex-direction: row;
-
-    /* overflow-x: scroll; */
-  }
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  .box {
-    width: 150px;
-    height: 220px;
-    background-color: orange;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: transform 0.8s ease, box-shadow 0.5s ease;
-    filter: grayscale(100%);
-  }
-
-  /* Hover effect on the box */
-  .box:hover {
-    transform: translateY(-110px); /* Moves the box up */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
-    filter: grayscale(0%);
-  }
-
-  .box-content {
-    position: absolute; /* Keeps content static */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    /* text-align: center; */
-    font-size: 18px;
-    font-family: "Kanit", serif;
-  }
-
-  #slideBar img {
-    width: 151px;
-    height: 135px;
-    margin-top: -20px;
-  }
-
-  #slideBar .box h2 {
-    font-family: "Kanit", serif;
-    font-size: 13px;
-    font-weight: 500;
-    padding-left: 10px;
-  }
-  #slideBar .box p {
-    font-family: "Kanit", serif;
-    font-size: 14px;
-    font-weight: 300;
-    padding-left: 10px;
-  }
-  #slideBar .box button {
-    font-family: "Kanit", serif;
-    outline: none;
-    border: none;
-    background-color: white;
-    color: black;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  #slideBar .box #moreInformation {
-    display: flex;
-    flex-direction: row;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 8px;
-    justify-content: space-between;
-  }
-  #slideBar .box h3 {
-    font-size: 14px;
-    /* padding-left: 10px; */
-    font-weight: 400;
-  }
-
-  #bodyContent {
-    padding: 20px;
-    height: 100vh;
-    font-family: "Kanit", serif;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #bodyContent h2 {
-    padding: 10px;
-    text-align: justify;
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  #bodyContent p {
-    padding: 10px;
-    text-align: justify;
-    color: gray;
-    font-weight: 300;
-    font-size: 12px;
-  }
-
-  #bodyContent #blockContainer {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 15px;
-  }
-  #bodyContent #blockContainer #oddBlock {
-    text-align: justify;
-    width: 40%;
-    padding: 15px;
-  }
-  #bodyContent #blockContainer #oddBlock h3,
-  #bodyContent #blockContainer #evenBlock h3 {
-    font-size: 15px;
-  }
-  #bodyContent #blockContainer #evenBlock {
-    text-align: justify;
-    width: 40%;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 15px;
-  }
-
-  .scrollContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: rgb(241, 243, 245);
-  }
-
-  .scrollContainer a {
-    padding: 13px;
-    background-color: gray;
-    border-radius: 50px;
-    height: 50px;
-    width: 50px;
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    font-size: 15px;
-  }
-
-  .scrollContainer #slider-wrapper {
-    overflow-x: scroll;
-    width: 100%;
-    transition: 0.8s;
-  }
-
-  .scrollContainer #slider-wrapper .slider {
-    display: flex;
-    width: 200%;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1,
-  .scrollContainer #slider-wrapper .slider #slide2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    /* width: flex; */
-    flex: 1;
-    text-align: justify;
-    background-color: rgb(241, 243, 245);
-    height: 80vh;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #oddBox,
-  .scrollContainer #slider-wrapper .slider #slide2 #oddBox {
-    width: 40%;
-    text-align: justify;
-    background-color: white;
-    border-radius: 15px;
-    padding: 10px;
-    font-family: "Kanit", serif;
-  }
-
-  .scrollContainer
-    #slider-wrapper
-    .slider
-    #slide1
-    #oddBox
-    h3
-    .scrollContainer
-    #slider-wrapper
-    .slider
-    #slide2
-    #oddBox
-    h3 {
-    padding: 10px;
-    font-size: 16px;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #oddBox p,
-  .scrollContainer #slider-wrapper .slider #slide2 #oddBox p {
-    font-weight: 300;
-    color: gray;
-    padding: 5px;
-    font-size: 12px;
-  }
-  .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,
-  .scrollContainer #slider-wrapper .slider #slide2 #evenBox img {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    margin: 10px;
-  }
-  #scrollingText {
-    font-family: "Kanit", serif;
-    font-size: 14px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #fff;
-    color: gray;
-    font-weight: 400;
-  }
-
-  #linkContainer {
-    background-color: rgb(241, 243, 245);
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 15px;
-  }
-  #linkContainer .boxLink {
-    width: 40%;
-    /* display:flex; */
-    font-family: "Kanit", serif;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    display: block;
-  }
-  #linkContainer .boxLink #someImages {
-    height: 130px;
-    background-color: white;
-    width: 300px;
-    border-radius: 15px;
-    margin-top: 10px;
-  }
-  #linkContainer .boxLink h3 {
-    font-size: 14px;
-  }
-  #linkContainer .boxLink {
-    font-size: 14px;
-  }
-  #linkContainer .boxLink p {
-    color: gray;
-    font-weight: 300;
-    font-size: 12px;
-  }
   /* STYLEING OF MODAL------------------------------------------- */
   .modal {
     display: none;
@@ -1948,6 +466,2963 @@ button:hover {
   #blockLeft button {
     font-family: "Kanit", serif;
     font-size: 15px;
+    padding: 5px;
+    font-weight: 300;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* -----MAX WIDTH : 1250 ---------------------------------- */
+
+  @media (max-width: 1250px) {
+    main article {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 30px;
+      width: 84%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 30px;
+    }
+    main article #leftContent {
+      width: 50%;
+      padding: 10px;
+      /* padding-left:30px; */
+    }
+    main article #landingPageHeading h1 {
+      font-family: "Kanit", serif;
+      font-size: 40px;
+    }
+    main article p {
+      font-family: "Kanit", serif;
+      font-size: 18px;
+      font-weight: 200;
+    }
+    main article #rightContent #videoBlock #mainPageVideo {
+      height: 140px;
+      width: 230px;
+      filter: grayscale(100%) brightness(0.8) contrast(120%);
+    }
+    main article #rightContent #videoBlock {
+      width: 230px;
+      /* margin-right:20px; */
+    }
+    main article #rightContent p {
+      font-size: 13px;
+      font-family: "Kanit", serif;
+    }
+    main article #rightContent nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    main article #rightContent nav div {
+      font-size: 13px;
+      text-align: justify;
+
+      font-family: "Kanit", serif;
+      /* position:absolute; */
+    }
+    article nav div p {
+      font-size: 16px;
+    }
+    #slideBar {
+      display: inline-flex;
+      flex-direction: row;
+
+      /* overflow-x: scroll; */
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    .box {
+      width: 180px;
+      height: 250px;
+      background-color: orange;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+      transition: transform 0.8s ease, box-shadow 0.5s ease;
+      filter: grayscale(100%);
+    }
+
+    /* Hover effect on the box */
+    .box:hover {
+      transform: translateY(-140px); /* Moves the box up */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
+      filter: grayscale(0%);
+    }
+
+    .box-content {
+      position: absolute; /* Keeps content static */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      /* text-align: center; */
+      font-size: 18px;
+      font-family: "Kanit", serif;
+    }
+
+    #slideBar img {
+      width: 181px;
+      height: 145px;
+      margin-top: -20px;
+    }
+
+    #slideBar .box h2 {
+      font-family: "Kanit", serif;
+      font-size: 18px;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+    #slideBar .box p {
+      font-family: "Kanit", serif;
+      font-size: 16px;
+      font-weight: 300;
+      padding-left: 10px;
+    }
+    #slideBar .box button {
+      font-family: "Kanit", serif;
+      outline: none;
+      border: none;
+      background-color: white;
+      color: black;
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+    }
+    #slideBar .box #moreInformation {
+      display: flex;
+      flex-direction: row;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 8px;
+      justify-content: space-between;
+    }
+    #slideBar .box h3 {
+      font-size: 16px;
+      /* padding-left: 10px; */
+      font-weight: 400;
+    }
+
+    #bodyContent {
+      padding: 20px;
+      height: 100vh;
+      font-family: "Kanit", serif;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #bodyContent h2 {
+      padding: 10px;
+      text-align: justify;
+      font-size: 35px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      padding: 10px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    #bodyContent p {
+      padding: 10px;
+      text-align: justify;
+      color: gray;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    #bodyContent #blockContainer {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+    #bodyContent #blockContainer #oddBlock {
+      text-align: center;
+      width: 40%;
+      padding: 20px;
+    }
+    #bodyContent #blockContainer #evenBlock {
+      text-align: center;
+      width: 40%;
+      padding: 20px;
+      background-color: whitesmoke;
+      border-radius: 15px;
+    }
+
+    .scrollContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      background-color: rgb(241, 243, 245);
+    }
+
+    .scrollContainer a {
+      padding: 15px;
+      background-color: gray;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+      font-size: 18px;
+    }
+
+    .scrollContainer #slider-wrapper {
+      overflow-x: scroll;
+      width: 100%;
+      transition: 0.8s;
+    }
+
+    .scrollContainer #slider-wrapper .slider {
+      display: flex;
+      width: 200%;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1,
+    .scrollContainer #slider-wrapper .slider #slide2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0 auto;
+      /* width: flex; */
+      flex: 1;
+      text-align: justify;
+      background-color: rgb(241, 243, 245);
+      height: 80vh;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #oddBox,
+    .scrollContainer #slider-wrapper .slider #slide2 #oddBox {
+      width: 40%;
+      text-align: justify;
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px;
+      font-family: "Kanit", serif;
+    }
+
+    .scrollContainer
+      #slider-wrapper
+      .slider
+      #slide1
+      #oddBox
+      h3
+      .scrollContainer
+      #slider-wrapper
+      .slider
+      #slide2
+      #oddBox
+      h3 {
+      padding: 10px;
+      font-size: 18px;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #oddBox p,
+    .scrollContainer #slider-wrapper .slider #slide2 #oddBox p {
+      font-weight: 300;
+      color: gray;
+      padding: 5px;
+      font-size: 14px;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,
+    .scrollContainer #slider-wrapper .slider #slide2 #evenBox img {
+      width: 300px;
+      height: 250px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+    #scrollingText {
+      font-family: "Kanit", serif;
+      font-size: 16px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #fff;
+      color: gray;
+      font-weight: 400;
+    }
+
+    #linkContainer {
+      background-color: rgb(241, 243, 245);
+      display: inline-flex;
+      flex-wrap: wrap;
+      flex: 1;
+      justify-content: space-around;
+      margin-left: 30px;
+      margin-right: 30px;
+      border-radius: 15px;
+    }
+    #linkContainer .boxLink {
+      width: 40%;
+      /* display:flex; */
+      font-family: "Kanit", serif;
+      flex-wrap: wrap;
+      margin: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    #linkContainer .boxLink #someImages {
+      height: 150px;
+      background-color: white;
+      width: 300px;
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+    #linkContainer .boxLink {
+      font-size: 16px;
+    }
+    #linkContainer .boxLink p {
+      color: gray;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    /* STYLEING OF MODAL------------------------------------------- */
+    .modal {
+      display: none;
+
+      position: fixed;
+
+      z-index: 1;
+
+      left: 0;
+
+      top: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Modal content */
+
+    .modal-content {
+      background-color: white;
+
+      margin: 15% auto;
+
+      padding: 10px;
+
+      width: 500px;
+
+      border-radius: 8px;
+    }
+
+    /* Close button */
+
+    .close {
+      float: right;
+
+      font-size: 24px;
+
+      cursor: pointer;
+    }
+
+    /* Editing  Modal  */
+    #modalContainer {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    #modalContainer img {
+      height: 160px;
+      width: 200px;
+      border-radius: 10px;
+    }
+    #modalInfoContainer {
+      padding: 10px;
+      margin-left: 10px;
+    }
+    #modalInfoContainer h2 {
+      font-family: "Kanit", serif;
+      font-size: 18px;
+    }
+    #modalInfoContainer p {
+      font-family: "Kanit", serif;
+      font-size: 12px;
+      color: gray;
+    }
+
+    /* ---AUTOMATIC SLIDER------------------- */
+    #sliderContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    .slider {
+      position: relative;
+      width: 80%;
+      height: 80%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background: white;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slides {
+      display: flex;
+      width: 120%;
+      height: 100%;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: flex-start;
+      display: flex;
+    }
+
+    button:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    #prev {
+      left: 10px;
+      position: absolute;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.534);
+      top: 45%;
+      border-radius: 30px;
+      border: 2px solid white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    #next {
+      right: 10px;
+      position: absolute;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.534);
+      top: 45%;
+      border-radius: 30px;
+      color: black;
+      border: 2px solid white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* ---SLIDER CONTENT EDITING-------------------------------- */
+
+    #blockLeft {
+      display: flex;
+      flex-direction: row;
+      width: 82%;
+      align-items: center;
+    }
+    #blockLeft #image {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    #blockLeft h2 {
+      font-family: "Kanit", serif;
+      font-size: 22px;
+      font-weight: 600;
+      padding: 5px;
+    }
+    #blockLeft p {
+      font-family: "Kanit", serif;
+      font-size: 12px;
+      padding: 5px;
+      font-weight: 300;
+      color: gray;
+      text-align: justify;
+    }
+    #blockLeft button {
+      font-family: "Kanit", serif;
+      font-size: 12px;
+      padding: 4px;
+      font-weight: 300;
+      color: white;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  /* ---MAX WIDTH:1150----------------------------------------- */
+  @media (max-width: 1150px) {
+    main article {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 30px;
+      width: 84%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 30px;
+    }
+    main article #leftContent {
+      width: 50%;
+      padding: 10px;
+      /* padding-left:30px; */
+    }
+    main article #landingPageHeading h1 {
+      font-family: "Kanit", serif;
+      font-size: 35px;
+    }
+    main article p {
+      font-family: "Kanit", serif;
+      font-size: 16px;
+      font-weight: 200;
+    }
+    main article #rightContent #videoBlock #mainPageVideo {
+      height: 120px;
+      width: 210px;
+      filter: grayscale(100%) brightness(0.8) contrast(120%);
+    }
+    main article #rightContent #videoBlock {
+      width: 210px;
+      /* margin-right:20px; */
+    }
+    main article #rightContent p {
+      font-size: 11px;
+      font-family: "Kanit", serif;
+    }
+    main article #rightContent nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    main article #rightContent nav div {
+      font-size: 11px;
+      text-align: justify;
+      font-family: "Kanit", serif;
+      /* position:absolute; */
+    }
+    article nav div p {
+      font-size: 14px;
+    }
+    #slideBar {
+      display: inline-flex;
+      flex-direction: row;
+
+      /* overflow-x: scroll; */
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    .box {
+      width: 150px;
+      height: 220px;
+      background-color: orange;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+      transition: transform 0.8s ease, box-shadow 0.5s ease;
+      filter: grayscale(100%);
+    }
+
+    /* Hover effect on the box */
+    .box:hover {
+      transform: translateY(-110px); /* Moves the box up */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
+      filter: grayscale(0%);
+    }
+
+    .box-content {
+      position: absolute; /* Keeps content static */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      /* text-align: center; */
+      font-size: 18px;
+      font-family: "Kanit", serif;
+    }
+
+    #slideBar img {
+      width: 151px;
+      height: 135px;
+      margin-top: -20px;
+    }
+
+    #slideBar .box h2 {
+      font-family: "Kanit", serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+    #slideBar .box p {
+      font-family: "Kanit", serif;
+      font-size: 14px;
+      font-weight: 300;
+      padding-left: 10px;
+    }
+    #slideBar .box button {
+      font-family: "Kanit", serif;
+      outline: none;
+      border: none;
+      background-color: white;
+      color: black;
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    #slideBar .box #moreInformation {
+      display: flex;
+      flex-direction: row;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 8px;
+      justify-content: space-between;
+    }
+    #slideBar .box h3 {
+      font-size: 14px;
+      /* padding-left: 10px; */
+      font-weight: 400;
+    }
+
+    #bodyContent {
+      padding: 20px;
+      height: 100vh;
+      font-family: "Kanit", serif;
+      width: 98%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #bodyContent h2 {
+      padding: 10px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    #bodyContent p {
+      padding: 10px;
+      text-align: justify;
+      color: gray;
+      font-weight: 300;
+      font-size: 12px;
+    }
+
+    #bodyContent #blockContainer {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 15px;
+    }
+    #bodyContent #blockContainer #oddBlock {
+      text-align: center;
+      width: 40%;
+      padding: 15px;
+    }
+    #bodyContent #blockContainer #oddBlock h3,
+    #bodyContent #blockContainer #evenBlock h3 {
+      font-size: 15px;
+    }
+    #bodyContent #blockContainer #evenBlock {
+      text-align: center;
+      width: 40%;
+      padding: 20px;
+      background-color: whitesmoke;
+      border-radius: 15px;
+    }
+
+    .scrollContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      background-color: rgb(241, 243, 245);
+    }
+
+    .scrollContainer a {
+      padding: 13px;
+      background-color: gray;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+      font-size: 15px;
+    }
+
+    .scrollContainer #slider-wrapper {
+      overflow-x: scroll;
+      width: 100%;
+      transition: 0.8s;
+    }
+
+    .scrollContainer #slider-wrapper .slider {
+      display: flex;
+      width: 200%;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1,
+    .scrollContainer #slider-wrapper .slider #slide2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0 auto;
+      /* width: flex; */
+      flex: 1;
+      text-align: justify;
+      background-color: rgb(241, 243, 245);
+      height: 80vh;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #oddBox,
+    .scrollContainer #slider-wrapper .slider #slide2 #oddBox {
+      width: 40%;
+      text-align: justify;
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px;
+      font-family: "Kanit", serif;
+    }
+
+    .scrollContainer
+      #slider-wrapper
+      .slider
+      #slide1
+      #oddBox
+      h3
+      .scrollContainer
+      #slider-wrapper
+      .slider
+      #slide2
+      #oddBox
+      h3 {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #oddBox p,
+    .scrollContainer #slider-wrapper .slider #slide2 #oddBox p {
+      font-weight: 300;
+      color: gray;
+      padding: 5px;
+      font-size: 12px;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,
+    .scrollContainer #slider-wrapper .slider #slide2 #evenBox img {
+      width: 300px;
+      height: 250px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+    #scrollingText {
+      font-family: "Kanit", serif;
+      font-size: 14px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #fff;
+      color: gray;
+      font-weight: 400;
+    }
+
+    #linkContainer {
+      background-color: rgb(241, 243, 245);
+      display: inline-flex;
+      flex-wrap: wrap;
+      flex: 1;
+      justify-content: space-around;
+      margin-left: 30px;
+      margin-right: 30px;
+      border-radius: 15px;
+    }
+    #linkContainer .boxLink {
+      width: 40%;
+      /* display:flex; */
+      font-family: "Kanit", serif;
+      flex-wrap: wrap;
+      margin: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    #linkContainer .boxLink #someImages {
+      height: 130px;
+      background-color: white;
+      width: 300px;
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+    #linkContainer .boxLink h3 {
+      font-size: 14px;
+    }
+    #linkContainer .boxLink {
+      font-size: 14px;
+    }
+    #linkContainer .boxLink p {
+      color: gray;
+      font-weight: 300;
+      font-size: 12px;
+    }
+    #achievementHeading {
+      font-size: 16px;
+    }
+    /* STYLEING OF MODAL------------------------------------------- */
+    .modal {
+      display: none;
+
+      position: fixed;
+
+      z-index: 1;
+
+      left: 0;
+
+      top: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Modal content */
+
+    .modal-content {
+      background-color: white;
+
+      margin: 15% auto;
+
+      padding: 10px;
+
+      width: 500px;
+
+      border-radius: 8px;
+    }
+
+    /* Close button */
+
+    .close {
+      float: right;
+
+      font-size: 24px;
+
+      cursor: pointer;
+    }
+
+    /* Editing  Modal  */
+    #modalContainer {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    #modalContainer img {
+      height: 100px;
+      width: 160px;
+      border-radius: 10px;
+    }
+    #modalInfoContainer {
+      padding: 10px;
+      margin-left: 10px;
+    }
+    #modalInfoContainer h2 {
+      font-family: "Kanit", serif;
+      font-size: 15px;
+    }
+    #modalInfoContainer p {
+      font-family: "Kanit", serif;
+      font-size: 10px;
+      color: gray;
+    }
+
+      /* ---AUTOMATIC SLIDER------------------- */
+      #sliderContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background: #f0f0f0;
+        padding: 20px;
+      }
+      .slider {
+        position: relative;
+        width: 95%;
+        height: 80%;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background: white;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .slides {
+        display: flex;
+        width: 120%;
+        height: 100%;
+        transition: transform 1s ease-in-out;
+      }
+  
+      .slide {
+        width: 100%;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+      }
+  
+      button:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+  
+      #prev {
+        left: 10px;
+        position: absolute;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.534);
+        top: 45%;
+        border-radius: 30px;
+        border: 2px solid white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      #next {
+        right: 10px;
+        position: absolute;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.534);
+        top: 45%;
+        border-radius: 30px;
+        color: black;
+        border: 2px solid white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+  
+      /* ---SLIDER CONTENT EDITING-------------------------------- */
+  
+      #blockLeft {
+        display: flex;
+        flex-direction: row;
+        width: 82%;
+        align-items: center;
+      }
+      #blockLeft #image {
+        width: 250px;
+        height: 200px;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+      #blockLeft h2 {
+        font-family: "Kanit", serif;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 0px;
+      }
+      #blockLeft p {
+        font-family: "Kanit", serif;
+        font-size: 12px;
+        padding: 2px;
+        font-weight: 300;
+        color: gray;
+        text-align: justify;
+      }
+      #blockLeft button {
+        font-family: "Kanit", serif;
+        font-size: 12px;
+        padding: 3px;
+        font-weight: 300;
+        color: white;
+        background-color: orange;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding-left: 15px;
+        padding-right: 15px;
+      } 
+  }
+
+  /* ---MAX WIDTH:1050----------------------------------------- */
+  @media (max-width: 950px) {
+  
+    main article {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 30px;
+      width: 84%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 30px;
+    }
+    main article #leftContent {
+      width: 50%;
+      padding: 10px;
+      /* padding-left:30px; */
+    }
+    main article #landingPageHeading h1 {
+      font-family: "Kanit", serif;
+      font-size: 35px;
+    }
+    main article p {
+      font-family: "Kanit", serif;
+      font-size: 16px;
+      font-weight: 200;
+    }
+    main article #rightContent #videoBlock #mainPageVideo {
+      height: 120px;
+      width: 210px;
+      filter: grayscale(100%) brightness(0.8) contrast(120%);
+    }
+    main article #rightContent #videoBlock {
+      width: 210px;
+      /* margin-right:20px; */
+    }
+    main article #rightContent p {
+      font-size: 11px;
+      font-family: "Kanit", serif;
+    }
+    main article #rightContent nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    main article #rightContent nav div {
+      font-size: 11px;
+      text-align: justify;
+      font-family: "Kanit", serif;
+      /* position:absolute; */
+    }
+    article nav div p {
+      font-size: 14px;
+    }
+    #slideBar {
+      display: inline-flex;
+      flex-direction: row;
+
+      /* overflow-x: scroll; */
+    }
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    .box {
+      width: 150px;
+      height: 220px;
+      background-color: orange;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      position: relative;
+      transition: transform 0.8s ease, box-shadow 0.5s ease;
+      filter: grayscale(100%);
+    }
+
+    /* Hover effect on the box */
+    .box:hover {
+      transform: translateY(-110px); /* Moves the box up */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
+      filter: grayscale(0%);
+    }
+
+    .box-content {
+      position: absolute; /* Keeps content static */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      /* text-align: center; */
+      font-size: 18px;
+      font-family: "Kanit", serif;
+    }
+
+    #slideBar img {
+      width: 151px;
+      height: 135px;
+      margin-top: -20px;
+    }
+
+    #slideBar .box h2 {
+      font-family: "Kanit", serif;
+      font-size: 13px;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+    #slideBar .box p {
+      font-family: "Kanit", serif;
+      font-size: 14px;
+      font-weight: 300;
+      padding-left: 10px;
+    }
+    #slideBar .box button {
+      font-family: "Kanit", serif;
+      outline: none;
+      border: none;
+      background-color: white;
+      color: black;
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    #slideBar .box #moreInformation {
+      display: flex;
+      flex-direction: row;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 8px;
+      justify-content: space-between;
+    }
+    #slideBar .box h3 {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    #bodyContent {
+      padding: 20px;
+      height: 100vh;
+      font-family: "Kanit", serif;
+      width: 98%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+    #bodyContent h2 {
+      padding: 0px;
+      /* text-align: justify; */
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+    #bodyContent p {
+      padding: 10px;
+      text-align: justify;
+      color: gray;
+      font-weight: 300;
+      font-size: 12px;
+    }
+
+    #bodyContent #blockContainer {
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top: 10px;
+    }
+    #bodyContent #blockContainer #oddBlock {
+      /* text-align: justify; */
+      width: 46%;
+      padding: 10px;
+    }
+    #bodyContent #blockContainer #oddBlock h3,
+    #bodyContent #blockContainer #evenBlock h3 {
+      font-size: 15px;
+    }
+    #bodyContent #blockContainer #evenBlock {
+      /* text-align: justify; */
+      width: 46%;
+      padding: 20px;
+      background-color: whitesmoke;
+      border-radius: 15px;
+    }
+
+    .scrollContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      background-color: rgb(241, 243, 245);
+    }
+
+    .scrollContainer a {
+      padding: 13px;
+      background-color: gray;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+      font-size: 15px;
+    }
+
+    .scrollContainer #slider-wrapper {
+      overflow-x: scroll;
+      width: 100%;
+      transition: 0.8s;
+    }
+
+    .scrollContainer #slider-wrapper .slider {
+      display: flex;
+      width: 200%;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1,
+    .scrollContainer #slider-wrapper .slider #slide2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0 auto;
+      /* width: flex; */
+      flex: 1;
+      text-align: justify;
+      background-color: rgb(241, 243, 245);
+      height: 80vh;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #oddBox,
+    .scrollContainer #slider-wrapper .slider #slide2 #oddBox {
+      width: 40%;
+      text-align: justify;
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px;
+      font-family: "Kanit", serif;
+    }
+
+    .scrollContainer
+      #slider-wrapper
+      .slider
+      #slide1
+      #oddBox
+      h3
+      .scrollContainer
+      #slider-wrapper
+      .slider
+      #slide2
+      #oddBox
+      h3 {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #oddBox p,
+    .scrollContainer #slider-wrapper .slider #slide2 #oddBox p {
+      font-weight: 300;
+      color: gray;
+      padding: 5px;
+      font-size: 12px;
+    }
+    .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,
+    .scrollContainer #slider-wrapper .slider #slide2 #evenBox img {
+      width: 300px;
+      height: 250px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+    #scrollingText {
+      font-family: "Kanit", serif;
+      font-size: 14px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #fff;
+      color: gray;
+      font-weight: 400;
+    }
+
+    #linkContainer {
+      background-color: rgb(241, 243, 245);
+      display: inline-flex;
+      flex-wrap: wrap;
+      flex: 1;
+      justify-content: space-around;
+      margin-left: 30px;
+      margin-right: 30px;
+      border-radius: 15px;
+    }
+    #linkContainer .boxLink {
+      width: 40%;
+      /* display:flex; */
+      font-family: "Kanit", serif;
+      flex-wrap: wrap;
+      margin: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+      display: block;
+    }
+    #linkContainer .boxLink #someImages {
+      height: 130px;
+      background-color: white;
+      width: 300px;
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+    #linkContainer .boxLink h3 {
+      font-size: 14px;
+    }
+    #linkContainer .boxLink {
+      font-size: 14px;
+    }
+    #linkContainer .boxLink p {
+      color: gray;
+      font-weight: 300;
+      font-size: 12px;
+    }
+    /* STYLEING OF MODAL------------------------------------------- */
+    .modal {
+      display: none;
+
+      position: fixed;
+
+      z-index: 1;
+
+      left: 0;
+
+      top: 0;
+
+      width: 100%;
+
+      height: 100%;
+
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Modal content */
+
+    .modal-content {
+      background-color: white;
+
+      margin: 15% auto;
+
+      padding: 10px;
+
+      width: 500px;
+
+      border-radius: 8px;
+    }
+
+    /* Close button */
+
+    .close {
+      float: right;
+
+      font-size: 24px;
+
+      cursor: pointer;
+    }
+
+    /* Editing  Modal  */
+    #modalContainer {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    #modalContainer img {
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+    }
+    #modalInfoContainer {
+      padding: 10px;
+      margin-left: 10px;
+    }
+    #modalInfoContainer h2 {
+      font-family: "Kanit", serif;
+      font-size: 20px;
+    }
+    #modalInfoContainer p {
+      font-family: "Kanit", serif;
+      font-size: 15px;
+      color: gray;
+    }
+
+    /* ---AUTOMATIC SLIDER------------------- */
+    #sliderContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    .slider {
+      position: relative;
+      width: 95%;
+      height: 80%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background: white;
+      padding: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slides {
+      display: flex;
+      width: 120%;
+      height: 100%;
+      transition: transform 1s ease-in-out;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: flex-start;
+      display: flex;
+    }
+
+    button:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    #prev {
+      left: 10px;
+      position: absolute;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.534);
+      top: 45%;
+      border-radius: 30px;
+      border: 2px solid white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    #next {
+      right: 10px;
+      position: absolute;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.534);
+      top: 45%;
+      border-radius: 30px;
+      color: black;
+      border: 2px solid white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* ---SLIDER CONTENT EDITING-------------------------------- */
+
+    #blockLeft {
+      display: flex;
+      flex-direction: row;
+      width: 82%;
+      align-items: center;
+    }
+    #blockLeft #image {
+      width: 250px;
+      height: 200px;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    #blockLeft h2 {
+      font-family: "Kanit", serif;
+      font-size: 25px;
+      font-weight: 500;
+      padding: 0px;
+    }
+    #blockLeft p {
+      font-family: "Kanit", serif;
+      font-size: 12px;
+      padding: 2px;
+      font-weight: 300;
+      color: gray;
+      text-align: justify;
+    }
+    #blockLeft button {
+      font-family: "Kanit", serif;
+      font-size: 12px;
+      padding: 3px;
+      font-weight: 300;
+      color: white;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+
+
+    /* ---MAX WIDTH:1050----------------------------------------- */
+    @media (max-width: 900px) {
+  
+      main article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 84%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+      }
+      main article #leftContent {
+        width: 50%;
+        padding: 10px;
+        /* padding-left:30px; */
+      }
+      main article #landingPageHeading h1 {
+        font-family: "Kanit", serif;
+        font-size: 35px;
+      }
+      main article p {
+        font-family: "Kanit", serif;
+        font-size: 16px;
+        font-weight: 200;
+      }
+      main article #rightContent #videoBlock #mainPageVideo {
+        height: 120px;
+        width: 210px;
+        filter: grayscale(100%) brightness(0.8) contrast(120%);
+      }
+      main article #rightContent #videoBlock {
+        width: 210px;
+        /* margin-right:20px; */
+      }
+      main article #rightContent p {
+        font-size: 11px;
+        font-family: "Kanit", serif;
+      }
+      main article #rightContent nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      main article #rightContent nav div {
+        font-size: 11px;
+        text-align: justify;
+        font-family: "Kanit", serif;
+        /* position:absolute; */
+      }
+      article nav div p {
+        font-size: 14px;
+      }
+      #slideBar {
+        display: inline-flex;
+        flex-direction: row;
+  
+        /* overflow-x: scroll; */
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
+  
+      .box {
+        width: 150px;
+        height: 220px;
+        background-color: orange;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        transition: transform 0.8s ease, box-shadow 0.5s ease;
+        filter: grayscale(100%);
+      }
+  
+      /* Hover effect on the box */
+      .box:hover {
+        transform: translateY(-110px); /* Moves the box up */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
+        filter: grayscale(0%);
+      }
+  
+      .box-content {
+        position: absolute; /* Keeps content static */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        /* text-align: center; */
+        font-size: 18px;
+        font-family: "Kanit", serif;
+      }
+  
+      #slideBar img {
+        width: 151px;
+        height: 135px;
+        margin-top: -20px;
+      }
+  
+      #slideBar .box h2 {
+        font-family: "Kanit", serif;
+        font-size: 13px;
+        font-weight: 500;
+        padding-left: 10px;
+      }
+      #slideBar .box p {
+        font-family: "Kanit", serif;
+        font-size: 14px;
+        font-weight: 300;
+        padding-left: 10px;
+      }
+      #slideBar .box button {
+        font-family: "Kanit", serif;
+        outline: none;
+        border: none;
+        background-color: white;
+        color: black;
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+      #slideBar .box #moreInformation {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 8px;
+        justify-content: space-between;
+      }
+      #slideBar .box h3 {
+        font-size: 14px;
+        font-weight: 400;
+      }
+  
+      #bodyContent {
+        padding: 20px;
+        height: 100vh;
+        font-family: "Kanit", serif;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      #bodyContent h2 {
+        padding: 0px;
+        /* text-align: justify; */
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 0px;
+      }
+      #bodyContent p {
+        padding: 10px;
+        text-align: justify;
+        color: gray;
+        font-weight: 300;
+        font-size: 12px;
+      }
+  
+      #bodyContent #blockContainer {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 10px;
+      }
+      #bodyContent #blockContainer #oddBlock {
+        /* text-align: justify; */
+        width: 46%;
+        padding: 10px;
+      }
+      #bodyContent #blockContainer #oddBlock h3,
+      #bodyContent #blockContainer #evenBlock h3 {
+        font-size: 15px;
+      }
+      #bodyContent #blockContainer #evenBlock {
+        /* text-align: justify; */
+        width: 46%;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+      }
+  
+      .scrollContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        background-color: rgb(241, 243, 245);
+      }
+  
+      .scrollContainer a {
+        padding: 13px;
+        background-color: gray;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        font-size: 15px;
+      }
+  
+      .scrollContainer #slider-wrapper {
+        overflow-x: scroll;
+        width: 100%;
+        transition: 0.8s;
+      }
+  
+      .scrollContainer #slider-wrapper .slider {
+        display: flex;
+        width: 200%;
+      }
+      .scrollContainer #slider-wrapper .slider #slide1,
+      .scrollContainer #slider-wrapper .slider #slide2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        /* width: flex; */
+        flex: 1;
+        text-align: justify;
+        background-color: rgb(241, 243, 245);
+        height: 80vh;
+      }
+      .scrollContainer #slider-wrapper .slider #slide1 #oddBox,
+      .scrollContainer #slider-wrapper .slider #slide2 #oddBox {
+        width: 40%;
+        text-align: justify;
+        background-color: white;
+        border-radius: 15px;
+        padding: 10px;
+        font-family: "Kanit", serif;
+      }
+  
+      .scrollContainer
+        #slider-wrapper
+        .slider
+        #slide1
+        #oddBox
+        h3
+        .scrollContainer
+        #slider-wrapper
+        .slider
+        #slide2
+        #oddBox
+        h3 {
+        padding: 10px;
+        font-size: 16px;
+      }
+      .scrollContainer #slider-wrapper .slider #slide1 #oddBox p,
+      .scrollContainer #slider-wrapper .slider #slide2 #oddBox p {
+        font-weight: 300;
+        color: gray;
+        padding: 5px;
+        font-size: 12px;
+      }
+      .scrollContainer #slider-wrapper .slider #slide1 #evenBox img,
+      .scrollContainer #slider-wrapper .slider #slide2 #evenBox img {
+        width: 300px;
+        height: 250px;
+        border-radius: 15px;
+        margin: 10px;
+      }
+      #scrollingText {
+        font-family: "Kanit", serif;
+        font-size: 14px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        color: gray;
+        font-weight: 400;
+      }
+  
+      #linkContainer {
+        background-color: rgb(241, 243, 245);
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: space-around;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 15px;
+      }
+      #linkContainer .boxLink {
+        width: 40%;
+        /* display:flex; */
+        font-family: "Kanit", serif;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: block;
+      }
+      #linkContainer .boxLink #someImages {
+        height: 130px;
+        background-color: white;
+        width: 300px;
+        border-radius: 15px;
+        margin-top: 10px;
+      }
+      #linkContainer .boxLink h3 {
+        font-size: 14px;
+      }
+      #linkContainer .boxLink {
+        font-size: 14px;
+      }
+      #linkContainer .boxLink p {
+        color: gray;
+        font-weight: 300;
+        font-size: 12px;
+      }
+      /* STYLEING OF MODAL------------------------------------------- */
+      .modal {
+        display: none;
+  
+        position: fixed;
+  
+        z-index: 1;
+  
+        left: 0;
+  
+        top: 0;
+  
+        width: 100%;
+  
+        height: 100%;
+  
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+  
+      /* Modal content */
+  
+      .modal-content {
+        background-color: white;
+  
+        margin: 15% auto;
+  
+        padding: 10px;
+  
+        width: 500px;
+  
+        border-radius: 8px;
+      }
+  
+      /* Close button */
+  
+      .close {
+        float: right;
+  
+        font-size: 24px;
+  
+        cursor: pointer;
+      }
+  
+      /* Editing  Modal  */
+      #modalContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      #modalContainer img {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+      }
+      #modalInfoContainer {
+        padding: 10px;
+        margin-left: 10px;
+      }
+      #modalInfoContainer h2 {
+        font-family: "Kanit", serif;
+        font-size: 20px;
+      }
+      #modalInfoContainer p {
+        font-family: "Kanit", serif;
+        font-size: 15px;
+        color: gray;
+      }
+  
+      /* ---AUTOMATIC SLIDER------------------- */
+      #sliderContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background: #f0f0f0;
+        padding: 20px;
+      }
+      .slider {
+        position: relative;
+        width: 95%;
+        height: 80%;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background: white;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .slides {
+        display: flex;
+        width: 120%;
+        height: 100%;
+        transition: transform 1s ease-in-out;
+      }
+  
+      .slide {
+        width: 100%;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+      }
+  
+      button:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+  
+      #prev {
+        left: 10px;
+        position: absolute;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.534);
+        top: 45%;
+        border-radius: 30px;
+        border: 2px solid white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      #next {
+        right: 10px;
+        position: absolute;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.534);
+        top: 45%;
+        border-radius: 30px;
+        color: black;
+        border: 2px solid white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+  
+      /* ---SLIDER CONTENT EDITING-------------------------------- */
+  
+      #blockLeft {
+        display: flex;
+        flex-direction: row;
+        width: 82%;
+        align-items: center;
+      }
+      #blockLeft #image {
+        width: 250px;
+        height: 200px;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+      #blockLeft h2 {
+        font-family: "Kanit", serif;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 0px;
+      }
+      #blockLeft p {
+        font-family: "Kanit", serif;
+        font-size: 12px;
+        padding: 2px;
+        font-weight: 300;
+        color: gray;
+        text-align: justify;
+      }
+      #blockLeft button {
+        font-family: "Kanit", serif;
+        font-size: 12px;
+        padding: 3px;
+        font-weight: 300;
+        color: white;
+        background-color: orange;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  
+@media(min-height:600px) and (min-width:900px){
+    * {
+    scroll-behavior: smooth;
+  }
+  main {
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  main article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+  main article #leftContent {
+    width: 50%;
+    padding: 10px;
+    /* padding-left:30px; */
+  }
+  main article #landingPageHeading h1 {
+    font-family: "Kanit", serif;
+    font-size: 50px;
+  }
+  main article p {
+    font-family: "Kanit", serif;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  main article #rightContent #videoBlock #mainPageVideo {
+    height: 160px;
+    width: 280px;
+    filter: grayscale(100%) brightness(0.8) contrast(120%);
+  }
+  main article #rightContent #videoBlock {
+    width: 280px;
+    /* margin-right:20px; */
+  }
+  main article #rightContent p {
+    font-size: 15px;
+    font-family: "Kanit", serif;
+  }
+  main article #rightContent nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main article #rightContent nav div {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Kanit", serif;
+    /* position:absolute; */
+  }
+  #slideBar {
+    display: inline-flex;
+    flex-direction: row;
+
+    /* overflow-x: scroll; */
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .box {
+    width: 220px;
+    height: 350px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.8s ease, box-shadow 0.5s ease;
+    filter: grayscale(100%);
+  }
+
+  /* Hover effect on the box */
+  .box:hover {
+    transform: translateY(-150px); /* Moves the box up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
+    filter: grayscale(0%);
+  }
+
+  .box-content {
+    position: absolute; /* Keeps content static */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* text-align: center; */
+    font-size: 18px;
+    font-family: "Kanit", serif;
+  }
+
+  #slideBar img {
+    width: 221px;
+    height: 240px;
+    margin-top: -20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  #slideBar .box h2 {
+    font-family: "Kanit", serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  #slideBar .box p {
+    font-family: "Kanit", serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+  #slideBar .box button {
+    font-family: "Kanit", serif;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+  }
+  #slideBar .box #moreInformation {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+  }
+  #slideBar .box h3 {
+    font-size: 18px;
+    /* padding-left: 10px; */
+    font-weight: 400;
+  }
+  ul li {
+    list-style: none;
+  }
+  ol li {
+    list-style: none;
+  }
+  #bodyContent {
+    padding: 20px;
+    height: 100vh;
+    font-family: "Kanit", serif;
+    width: 90%;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+  }
+  #bodyContent h2 {
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  #bodyContent p {
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+  }
+
+  #bodyContent #blockContainer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  #bodyContent #blockContainer #oddBlock {
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+  }
+  #bodyContent #blockContainer #evenBlock {
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+  }
+
+  .scrollContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(241, 243, 245);
+  }
+
+  .scrollContainer a {
+    padding: 15px;
+    background-color: gray;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  .scrollContainer #slider-wrapper {
+    overflow-x: scroll;
+    width: 100%;
+    transition: 0.8s;
+  }
+
+  #achievementHeading {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    background-color: orange;
+    width: 100%;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #sliderImage {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* #slideImageContainer {
+    height: 100%;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+  } */
+  #slideContentContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  #slideInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    align-items: justify;
+    width: 60%;
+  }
+  #scrollingText {
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    color: gray;
+    font-weight: 400;
+  }
+
+  #linkContainer {
+    background-color: rgb(241, 243, 245);
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+  }
+  #linkContainer .boxLink {
+    width: 40%;
+    /* display:flex; */
+    font-family: "Kanit", serif;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  #linkContainer .boxLink #someImages {
+    height: 150px;
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  #linkContainer .boxLink p {
+    color: gray;
+    font-weight: 300;
+  }
+
+  /* STYLEING OF MODAL------------------------------------------- */
+  .modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Modal content */
+
+  .modal-content {
+    background-color: white;
+
+    margin: 15% auto;
+
+    padding: 10px;
+
+    width: 500px;
+
+    border-radius: 8px;
+  }
+
+  /* Close button */
+
+  .close {
+    float: right;
+
+    font-size: 24px;
+
+    cursor: pointer;
+  }
+
+  /* Editing  Modal  */
+  #modalContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  #modalContainer img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  #modalInfoContainer {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  #modalInfoContainer h2 {
+    font-family: "Kanit", serif;
+    font-size: 20px;
+  }
+  #modalInfoContainer p {
+    font-family: "Kanit", serif;
+    font-size: 15px;
+    color: gray;
+  }
+
+  /* ---AUTOMATIC SLIDER------------------- */
+  #sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  .slider {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slides {
+    display: flex;
+    width: 120%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+  }
+
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+  }
+
+  button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  #prev {
+    left: 10px;
+    position: absolute;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.534);
+    top: 45%;
+    border-radius: 30px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #next {
+    right: 10px;
+    position: absolute;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.534);
+    top: 45%;
+    border-radius: 30px;
+    color: black;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  /* ---SLIDER CONTENT EDITING-------------------------------- */
+
+  #blockLeft {
+    display: flex;
+    flex-direction: row;
+    width: 82%;
+    align-items: center;
+  }
+  #blockLeft #image {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  #blockLeft h2 {
+    font-family: "Kanit", serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  #blockLeft p {
+    font-family: "Kanit", serif;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 300;
+    color: gray;
+    text-align: justify;
+  }
+  #blockLeft button {
+    font-family: "Kanit", serif;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: 300;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media(max-width:850px){
+   * {
+    scroll-behavior: smooth;
+  }
+  main {
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  main article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+  main article #leftContent {
+    width: 90%;
+    padding: 10px;
+    /* padding-left:30px; */
+  }
+  main article #landingPageHeading h1 {
+    font-family: "Kanit", serif;
+    font-size: 35px;
+  }
+  main article p {
+    font-family: "Kanit", serif;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  main article #rightContent #videoBlock #mainPageVideo {
+    height: 160px;
+    width: 280px;
+    filter: grayscale(100%) brightness(0.8) contrast(120%);
+    display: none;
+  }
+  main article #rightContent #videoBlock {
+    width: 280px;
+    display: none;
+    /* margin-right:20px; */
+  }
+  main article #rightContent p {
+    font-size: 15px;
+    display: none;
+    font-family: "Kanit", serif;
+  }
+  main article #rightContent nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: none;
+  }
+  main article #rightContent nav div {
+    font-size: 15px;
+    display: none;
+    text-align: center;
+    font-family: "Kanit", serif;
+    /* position:absolute; */
+    display: none;
+  }
+  #slideBar {
+    display: inline-flex;
+    flex-direction: row;  
+    
+    /* overflow-x: scroll; */
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .box {
+    width: 150px;
+    height: 250px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.8s ease, box-shadow 0.5s ease;
+    filter: grayscale(100%);
+    transform: translateY(100px);
+  }
+
+  /* Hover effect on the box */
+  .box:hover {
+    transform: translateY(-100px); /* Moves the box up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow */
+    filter: grayscale(0%);
+  }
+
+  .box-content {
+    position: absolute; /* Keeps content static */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    /* text-align: center; */
+    font-size: 18px;
+    font-family: "Kanit", serif;
+  }
+
+  #slideBar img {
+    width: 150px;
+    height: 140px;
+    margin-top: -20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  #slideBar .box h2 {
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  #slideBar .box p {
+    font-family: "Kanit", serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+  #slideBar .box button {
+    font-family: "Kanit", serif;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+  }
+  #slideBar .box #moreInformation {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+  }
+  #slideBar .box h3 {
+    font-size: 18px;
+    /* padding-left: 10px; */
+    font-weight: 400;
+  }
+  ul li {
+    list-style: none;
+  }
+  ol li {
+    list-style: none;
+  }
+  #bodyContent {
+    padding: 20px;
+    height: max-content;
+    font-family: "Kanit", serif;
+    width: 100%;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+  }
+  #bodyContent h2 {
+    padding: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  #bodyContent p {
+    padding: 10px;
+    text-align: justify;
+    color: gray;
+    font-weight: 300;
+  }
+
+  #bodyContent #blockContainer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  #bodyContent #blockContainer #oddBlock {
+    text-align: center;
+    width: 48%;
+    padding: 10px;
+  }
+  #bodyContent #blockContainer #evenBlock {
+    text-align: center;
+    width: 48%;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+
+  .scrollContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(241, 243, 245);
+  }
+
+  .scrollContainer a {
+    padding: 15px;
+    background-color: gray;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  .scrollContainer #slider-wrapper {
+    overflow-x: scroll;
+    width: 100%;
+    transition: 0.8s;
+  }
+
+  #achievementHeading {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    background-color: orange;
+    width: 100%;
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #sliderImage {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* #slideImageContainer {
+    height: 100%;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+  } */
+  #slideContentContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  #slideInfoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    align-items: justify;
+    width: 60%;
+  }
+  #scrollingText {
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    color: gray;
+    font-weight: 400;
+  }
+
+  #linkContainer {
+    background-color: rgb(241, 243, 245);
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+  }
+  #linkContainer .boxLink {
+    width: 40%;
+    /* display:flex; */
+    font-family: "Kanit", serif;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  #linkContainer .boxLink #someImages {
+    height: 150px;
+    background-color: white;
+    width: 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  #linkContainer .boxLink p {
+    color: gray;
+    font-weight: 300;
+  }
+
+  /* STYLEING OF MODAL------------------------------------------- */
+  .modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Modal content */
+
+  .modal-content {
+    background-color: white;
+
+    margin: 15% auto;
+
+    padding: 10px;
+
+    width: 500px;;
+
+    border-radius: 8px;
+  }
+
+  /* Close button */
+
+  .close {
+    float: right;
+
+    font-size: 24px;
+
+    cursor: pointer;
+  }
+
+  /* Editing  Modal  */
+  #modalContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  #modalContainer img {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  #modalInfoContainer {
+    padding: 10px;
+    margin-left: 10px;
+  }
+  #modalInfoContainer h2 {
+    font-family: "Kanit", serif;
+    font-size: 20px;
+  }
+  #modalInfoContainer p {
+    font-family: "Kanit", serif;
+    font-size: 15px;
+    color: gray;
+  }
+
+  /* ---AUTOMATIC SLIDER------------------- */
+  #sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #f0f0f0;
+    padding: 20px;
+  }
+  .slider {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slides {
+    display: flex;
+    width: 120%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+  }
+
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+  }
+
+  button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  #prev {
+    left: 10px;
+    position: absolute;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.534);
+    top: 45%;
+    border-radius: 30px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #next {
+    right: 10px;
+    position: absolute;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.534);
+    top: 45%;
+    border-radius: 30px;
+    color: black;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  /* ---SLIDER CONTENT EDITING-------------------------------- */
+
+  #blockLeft {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+  }
+  #blockLeft #image {
+    width: 300px;
+    height: 200px;
+    border-radius: 0px;
+    margin-right: 0px;
+  }
+  #blockLeft h2 {
+    font-family: "Kanit", serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  #blockLeft p {
+    font-family: "Kanit", serif;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 300;
+    color: gray;
+    text-align: justify;
+  }
+  #blockLeft button {
+    font-family: "Kanit", serif;
+    font-size: 12px;
     padding: 5px;
     font-weight: 300;
     color: white;

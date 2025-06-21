@@ -18,37 +18,71 @@
 <body>
  <!-- ---HEADER----------------------------------------------------------------------- -->
     <header>
-        <div id="headerlogo" >
-            <a href="../index.html">
-            <img id="mainLogo" src="../images/mainLogo.png" alt="Loading...">
-            </a>
+      <div id="headerlogo">
+        <a href="#">
+          <img id="mainLogo" src="../images/mainLogo.png" alt="Loading...">
+        </a>
+      </div>
+      <div id="headerNavigation">
+        <div id="Title">
+          <h2>
+            CROWN
+          </h2>
         </div>
-        <div id="headerNavigation" >
-         <div id="Title">
-            <h2>
-                CROWN
-            </h2>
-         </div>
-         <div id="Navigation">
-            <nav>
-                   
-                    <ul id="linkList">
-                      <li><a id="navLinks" href="../index.html">Home</a></li>
-                      <li><a id="navLinks" id="about" href="../mainAbout/about.html">About</a>
-                        <!-- <ul id='dropDown' >
-                          <li><a href="#">About Ham</a></li>
-                          <li><a href="#">IIH Trustees</a></li>
-                          <li><a href="#">IIH Life Member</a></li>
-                        </ul> -->
-                      </li>
-                      <li><a id="navLinks" href="../ham/ham.html">HAM</a></li>
-                      <li><a id="navLinks" href="../Events/index.html">Events</a></li>
-                      <li><a id="login" href="../Contact Us/index.html">Contact us</a></li>
-                    </ul>
-            </nav>
-         </div>
+        <div id="Navigation">
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul id="linkList">
+              <li><a id="navLinks" href="../index.html">Home</a></li>
+              <li><a id="navLinks" id="about" href="../mainAbout/about.html">About</a></li>
+              <li><a id="navLinks" href="../ham/ham.html">HAM</a></li>
+              <li><a id="navLinks" href="#">Events</a></li>
+              <li><a id="login" href="../Contact Us/index.html">Contact us</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
+    <div id="padding"></div>
+  
+    
+    <div id="padding"></div>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('#Navigation nav');
+        
+        menuBtn.addEventListener('click', function() {
+          nav.classList.toggle('active');
+          
+          // Change icon between bars and times
+          const icon = this.querySelector('i');
+          if (nav.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+          } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+          }
+        });
+        
+        // Close menu when clicking on a nav link
+        const navLinks = document.querySelectorAll('#linkList a');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            if (window.innerWidth <= 900) {
+              nav.classList.remove('active');
+              const icon = menuBtn.querySelector('i');
+              icon.classList.remove('fa-times');
+              icon.classList.add('fa-bars');
+            }
+          });
+        });
+      });
+    </script>
 <!-- ----MAIN------------------------------------------------------------------------------- -->
 <div class="timeline">
 
@@ -77,7 +111,7 @@
     <div class="timeline-block right">
 
         <div class="content">
-            <div id="blockLeft" >
+            <div id="blockRight" >
                 <div id="contentContainerLeft" >
                     <h2>ARSI National Field Day and Hill Topping Contest 2024</h2>
                     <p>The Crown Club participated in the ARSI National Field Day and Hill Topping Contest 2024, which was held on January 27-28, 2024, under the supervision of Dr. Umesh Shinde. The event's goal was to assess amateur radio communication skills in outdoor settings, therefore teams were required to set up their own radio stations on hilltops. The team consisted of 11 people (8 undergraduate students and 3 seasoned alumni), who chose a hilltop in Satara for their operations. They entered Category A (20m and 40m HF bands) and constructed stacked half-wave dipole antennas using bamboo and insulated copper wires, calibrated for optimal performance with a VNA equipment. These antennas were connected to an ICOM 718 transceiver using RG58 A/U coaxial wires.....
@@ -115,7 +149,7 @@
     <div class="timeline-block right">
 
         <div class="content">
-            <div id="blockLeft" >
+            <div id="blockRight" >
                 <div id="contentContainerLeft" >
                     <h2>ARSI National Field Day & Hill Topping Contest 2025</h2>
                     <p>The Crown Club participated in the ARSI National Field Day and Hill Topping Contest 2025, a 31-hour event that encourages hands-on amateur radio communication in isolated locations. This annual event encourages ham radio operators to enhance their technical and communication skills while mimicking real-world emergency circumstances.

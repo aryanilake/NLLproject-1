@@ -39,3 +39,16 @@ main{
     border-radius: 20px;
     border: 1px solid gray;
 }   
+
+@media(max-width:850px){
+    
+main p{
+    font-family: "Kanit", serif;
+    font-size: 18px;
+    /* font-weight: 600; */
+    padding:2px;
+    color: gray;    
+    justify-content: justify;
+    text-align: justify;
+}
+}

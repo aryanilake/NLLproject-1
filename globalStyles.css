@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.menu-btn{
+  display: none;
+}
 header {
   height: 25vh;
   display: flex;
@@ -138,6 +141,7 @@ header #headerNavigation #Navigation nav .dropDown {
 #downbox{
   background-color: whitesmoke;
   padding:20px;
+  width: 100%;
   border-radius: 10px;
 }
 #horizontalBar i{
@@ -302,7 +306,6 @@ header #headerNavigation #Navigation nav .dropDown {
     margin-right: auto;
     left: 0;
   }
-
   .downbox {
     float: bottom;
     background: rgb(241, 243, 245);
@@ -598,3 +601,247 @@ header #headerNavigation #Navigation nav .dropDown {
     width: 280px;
   }
 }
+
+
+@media(max-width:900px){
+  header {
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    position: relative;
+  }
+  
+  header #headerlogo #mainLogo {
+    height: 150px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  
+  header #headerNavigation #Title h2 {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    margin-left: 55px;
+  }
+  
+  header #headerNavigation {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  header #headerNavigation #Navigation nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 1s;
+  }
+  
+  header #headerNavigation #Navigation nav #linkList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    transition: 1s;
+  }
+  
+  header #headerNavigation #Navigation nav #linkList li,
+  header #headerNavigation #Navigation nav #linkList li a {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    list-style: none;
+  }
+  
+  #dropDown {
+    position: absolute;
+    transition: 1s;
+    display: none;
+  }
+  
+  header #headerNavigation #Navigation nav #linkList #dropDown li a {
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-left: -21.5px;
+    transition: 1s;
+    background-color: white;
+    padding: 4px;
+    margin-top: 3px;
+    color: gray;
+    border-left: 3px solid black;
+  }
+  
+  a:hover ~ #dropDown {
+    transition: 1s;
+    display: block;
+  }
+  
+  header #headerNavigation #Navigation nav a {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    width: 150px;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  header #headerNavigation #Navigation nav #navLinks {
+    border-right: 1.5px solid gray;
+    color: black;
+    padding-top: 1px;
+    transition: 1s;
+    padding-bottom: 1px;
+  }
+  
+  #login {
+    border: none;
+    border-right: none;
+    outline: none;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 10px;
+    color: white;
+    font-weight: 300;
+    font-style: bold;
+    margin-top: -10px;
+  }
+  
+  #padding {
+    padding: 1vh;
+  }
+  
+  header #headerNavigation #Navigation nav .dropDown {
+    position: relative;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-right: auto;
+    left: 0;
+  }
+  
+  /* Mobile Menu Button - Hidden by default */
+  .menu-btn {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Responsive Styles */
+    /* Show menu button only on mobile */
+    .menu-btn {
+      display: block;
+    }
+    
+    /* Hide regular navigation */
+    header #headerNavigation #Navigation nav {
+      display: none;
+    }
+    
+    /* Show sidebar when active */
+    header #headerNavigation #Navigation nav.active {
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: -20px;
+      width: 300px;
+      height: 100vh;
+      background-color: white;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 80px;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+    
+    header #headerlogo #mainLogo {
+      height:20px;
+      margin-right: 0px;
+      margin-left: 00px;
+    }
+    
+    header #headerNavigation #Navigation nav #linkList {
+      flex-direction: column;
+      width: 100%;
+    }
+    header #headerNavigation #Navigation nav #linkList li a{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    header #headerNavigation #Navigation nav #linkList li {
+      margin: 15px 0;
+    }
+    
+    header #headerNavigation #Navigation nav #navLinks {
+      border-right: none;
+      border-bottom: 1.5px solid gray;
+      padding: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    #login {
+      margin-top: 0;
+    }
+    
+    /* Adjust header height for mobile */
+    header {
+      height: 15vh;
+    }
+    
+    header #headerlogo #mainLogo {
+      height: 80px;
+    }
+    
+    header #headerNavigation #Title h2 {
+      font-size: 50px;
+      margin-left: 30px;
+    }
+
+    
+  iframe{
+    margin-top: 20px;
+    border-radius: 15px;
+    border:2px solid gray;
+  }
+  
+  #Collaborators{
+    display: none;
+  }
+  #VerticleBar{
+    display: flex;
+    flex-direction: column;
+  }
+  
+header #headerNavigation #Title h2 {
+  font-family: "Kanit", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  margin-left: 15px;
+}
+  }
+

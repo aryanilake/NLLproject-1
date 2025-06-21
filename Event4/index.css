@@ -39,3 +39,9 @@ main{
     border-radius: 20px;
     border: 1px solid gray;
 }   
+
+@media(max-width:850px){
+    p{
+        text-align: justify;
+    }
+}
