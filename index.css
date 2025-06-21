@@ -3046,6 +3046,9 @@
     font-size: 18px;
     font-family: "Kanit", serif;
   }
+  #slideBar{
+    margin-top: 30px;
+  }
 
   #slideBar img {
     width: 150px;
