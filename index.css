@@ -18,12 +18,12 @@
   }
   main article #leftContent {
     width: 50%;
-    padding: 10px;
+    padding: 5px;
     /* padding-left:30px; */
   }
   main article #landingPageHeading h1 {
     font-family: "Kanit", serif;
-    font-size: 50px;
+    font-size: 25px;
   }
   main article p {
     font-family: "Kanit", serif;
@@ -54,6 +54,70 @@
     font-family: "Kanit", serif;
     /* position:absolute; */
   }
+  /* Dropdown container */
+
+
+.ham-link {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;
+  width: 100%; ensure it fills the list item */
+  gap: 30px; /* optional, space between text and icon */
+}
+
+/* Optional: Prevent list items from collapsing */
+#linkList li {
+  position: relative;
+  width: max-content;
+}
+
+#linkList .dropdown {
+  width: 160px; /* match dropdown-menu min-width */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px 0;
+  min-width: 130px;
+  z-index: 999;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 10px;
+  color: rgb(14, 14, 14);
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #666363;
+}
+
+/* Show menu on hover (desktop) */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: Align submenu items */
+#linkList .dropdown-menu {
+  padding-left: 0;
+}
+
   #slideBar {
     display: inline-flex;
     flex-direction: row;
@@ -142,7 +206,7 @@
   }
   #bodyContent {
     padding: 20px;
-    height: 100vh;
+    height: 90vh;
     font-family: "Kanit", serif;
     width: 90%;
     margin-left: auto;
@@ -375,19 +439,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 70vh;
     background: #f0f0f0;
-    padding: 20px;
+    padding: 10px;
   }
   .slider {
     position: relative;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background: white;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     justify-content: center;
   }
@@ -444,8 +508,8 @@
     align-items: center;
   }
   #blockLeft #image {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     border-radius: 10px;
     margin-right: 20px;
   }
@@ -457,7 +521,7 @@
   }
   #blockLeft p {
     font-family: "Kanit", serif;
-    font-size: 15px;
+    font-size: 25px;
     padding: 5px;
     font-weight: 300;
     color: gray;
@@ -484,7 +548,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 30px;
+      padding-top: 20px;
       width: 84%;
       margin-left: auto;
       margin-right: auto;
@@ -492,7 +556,7 @@
     }
     main article #leftContent {
       width: 50%;
-      padding: 10px;
+      padding: 5px;
       /* padding-left:30px; */
     }
     main article #landingPageHeading h1 {
@@ -616,7 +680,7 @@
 
     #bodyContent {
       padding: 20px;
-      height: 100vh;
+      height: 90vh;
       font-family: "Kanit", serif;
       width: 90%;
       margin-left: auto;
@@ -869,7 +933,7 @@
       align-items: center;
       height: 90vh;
       background: #f0f0f0;
-      padding: 20px;
+      padding: 10px;
     }
     .slider {
       position: relative;
@@ -879,7 +943,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       background: white;
-      padding: 20px;
+      padding: 10px;
       align-items: center;
       justify-content: center;
     }
@@ -936,8 +1000,8 @@
       align-items: center;
     }
     #blockLeft #image {
-      width: 300px;
-      height: 200px;
+      width: 00px;
+      height: 300px;
       border-radius: 10px;
       margin-right: 20px;
     }
@@ -976,7 +1040,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 30px;
+      padding-top: 20px;
       width: 84%;
       margin-left: auto;
       margin-right: auto;
@@ -984,7 +1048,7 @@
     }
     main article #leftContent {
       width: 50%;
-      padding: 10px;
+      padding: 5px;
       /* padding-left:30px; */
     }
     main article #landingPageHeading h1 {
@@ -1108,7 +1172,7 @@
 
     #bodyContent {
       padding: 20px;
-      height: 100vh;
+      height: 90vh;
       font-family: "Kanit", serif;
       width: 98%;
       margin-left: auto;
@@ -1431,8 +1495,8 @@
         align-items: center;
       }
       #blockLeft #image {
-        width: 250px;
-        height: 200px;
+        width: 350px;
+        height: 300px;
         border-radius: 10px;
         margin-right: 20px;
       }
@@ -1472,7 +1536,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 30px;
+      padding-top: 20px;
       width: 84%;
       margin-left: auto;
       margin-right: auto;
@@ -1480,7 +1544,7 @@
     }
     main article #leftContent {
       width: 50%;
-      padding: 10px;
+      padding: 5px;
       /* padding-left:30px; */
     }
     main article #landingPageHeading h1 {
@@ -1603,7 +1667,7 @@
 
     #bodyContent {
       padding: 20px;
-      height: 100vh;
+      height: 90vh;
       font-family: "Kanit", serif;
       width: 98%;
       margin-left: auto;
@@ -1859,9 +1923,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 90vh;
+      height: 70vh;
       background: #f0f0f0;
-      padding: 20px;
+      padding: 10px;
     }
     .slider {
       position: relative;
@@ -1871,7 +1935,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       background: white;
-      padding: 20px;
+      padding: 10px;
       align-items: center;
       justify-content: center;
     }
@@ -1928,8 +1992,8 @@
       align-items: center;
     }
     #blockLeft #image {
-      width: 250px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       border-radius: 10px;
       margin-right: 20px;
     }
@@ -1971,7 +2035,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 30px;
+        padding-top: 20px;
         width: 84%;
         margin-left: auto;
         margin-right: auto;
@@ -1979,7 +2043,7 @@
       }
       main article #leftContent {
         width: 50%;
-        padding: 10px;
+        padding: 5px;
         /* padding-left:30px; */
       }
       main article #landingPageHeading h1 {
@@ -2102,7 +2166,7 @@
   
       #bodyContent {
         padding: 20px;
-        height: 100vh;
+        height: 90vh;
         font-family: "Kanit", serif;
         width: 98%;
         margin-left: auto;
@@ -2427,21 +2491,22 @@
         align-items: center;
       }
       #blockLeft #image {
-        width: 250px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         border-radius: 10px;
         margin-right: 20px;
       }
       #blockLeft h2 {
         font-family: "Kanit", serif;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 500;
         padding: 0px;
       }
       #blockLeft p {
         font-family: "Kanit", serif;
-        font-size: 12px;
+        font-size: 14px;
         padding: 2px;
+        padding-bottom: 10px;
         font-weight: 300;
         color: gray;
         text-align: justify;
@@ -2449,7 +2514,8 @@
       #blockLeft button {
         font-family: "Kanit", serif;
         font-size: 12px;
-        padding: 3px;
+        /* padding-top: 2px; */
+        padding: 5px;
         font-weight: 300;
         color: white;
         background-color: orange;
@@ -2474,7 +2540,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
     width: 84%;
     margin-left: auto;
     margin-right: auto;
@@ -2482,12 +2548,12 @@
   }
   main article #leftContent {
     width: 50%;
-    padding: 10px;
+    padding: 5px;
     /* padding-left:30px; */
   }
   main article #landingPageHeading h1 {
     font-family: "Kanit", serif;
-    font-size: 50px;
+    font-size: 35px;
   }
   main article p {
     font-family: "Kanit", serif;
@@ -2608,7 +2674,7 @@
   }
   #bodyContent {
     padding: 20px;
-    height: 100vh;
+    height: 90vh;
     font-family: "Kanit", serif;
     width: 90%;
     margin-left: auto;
@@ -2957,7 +3023,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 10vh;
+    padding-top: 0vh;
     width: 90%;
     /* margin-left: auto; */
     margin-right: auto;
@@ -2965,16 +3031,16 @@
   }
   main article #leftContent {
     width: 90%;
-    padding: 10px;
+    padding: 5px;
     /* padding-left:30px; */
   }
   main article #landingPageHeading h1 {
     font-family: "Kanit", serif;
-    font-size: 35px;
+    font-size: 30px;
   }
   main article p {
     font-family: "Kanit", serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 200;
   }
   main article #rightContent #videoBlock #mainPageVideo {
@@ -3018,8 +3084,8 @@
   }
 
   .box {
-    width: 150px;
-    height: 250px;
+    width: 100px;
+    height: 240px;
     background-color: orange;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -3047,12 +3113,12 @@
     font-family: "Kanit", serif;
   }
   #slideBar{
-    margin-top: 15vh;
+    margin-top: 0vh;
     overflow-x: visible;
   }
 
   #slideBar img {
-    width: 150px;
+    width: 100px;
     height: 140px;
     margin-top: -20px;
     border-top-left-radius: 10px;
@@ -3104,7 +3170,7 @@
     padding: 20px;
     height: max-content;
     font-family: "Kanit", serif;
-    width: 100%;
+    width: 90%;
     margin-left: auto;
     text-align: center;
     margin-right: auto;
@@ -3290,11 +3356,11 @@
 
     margin: 15% auto;
 
-    padding: 10px;
+    padding: 40px;
 
-    width: 500px;;
+    width: 300px;;
 
-    border-radius: 8px;
+    border-radius: 4px;
   }
 
   /* Close button */
@@ -3316,8 +3382,8 @@
     justify-content: center;
   }
   #modalContainer img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 10px;
   }
   #modalInfoContainer {
